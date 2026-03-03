@@ -1,0 +1,146 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BTS SIO - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="brand">Jasmine Gilbert</div>
+      <button class="nav-toggle" aria-label="Ouvrir le menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li class="dropdown">
+          <a class="dropbtn" href="index.html#apropos">A propos &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="mon-entreprise.html">Mon entreprise</a></li>
+            <li><a href="index.html#mon-stage">Mon stage</a></li>
+            <li><a href="mon-cv.html">Mon CV</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#tcs">TCS</a></li>
+        <li><a href="bts-sio.html">BTS SIO</a></li>
+        <li class="dropdown">
+          <a class="dropbtn" href="#">Projets &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="procedures.html">Toutes les procedures</a></li>
+            <li><a href="e5.html">Voir les procedures E5</a></li>
+            <li><a href="e6.html">Voir les procedures E6</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropbtn" href="index.html#veilles">Veilles &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html#veilles-tech">Veilles technologiques</a></li>
+            <li><a href="index.html#veilles-jur">Veilles juridiques</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <canvas id="bg-canvas"></canvas>
+  <main>
+    <section class="section">
+      <div class="skills-box" style="max-width:700px;margin:2rem auto;">
+        <h2>BTS SIO &mdash; Option SISR</h2>
+        <p style="color:#fff;margin-top:0.8rem;">
+          Personnalisez cette page comme vous le souhaitez : presentation du BTS SIO, competences, modules, etc.
+        </p>
+      </div>
+
+      <div class="skills-box" style="max-width:700px;margin:1.5rem auto;">
+        <h3 style="color:#fff;margin-bottom:0.6rem;">&#128218; Presentation du diplome</h3>
+        <p style="color:#fff;line-height:1.7;">
+          Le BTS Services Informatiques aux Organisations (SIO) forme des professionnels
+          capables d'assurer la gestion, l'exploitation et la maintenance des systemes
+          informatiques. L'option SISR est orientee vers les reseaux et la securite.
+        </p>
+      </div>
+
+      <div style="max-width:700px;margin:1.5rem auto;background:linear-gradient(135deg,#1a1060 0%,#0f4c81 40%,#0d6e6e 100%);border:2px solid #38bdf8;border-radius:16px;padding:1.8rem 1.5rem;box-shadow:0 0 24px rgba(56,189,248,0.25),0 4px 32px rgba(15,76,129,0.5);">
+        <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:1.4rem;">
+          <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#38bdf8;box-shadow:0 0 8px #38bdf8;"></span>
+          <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#6366f1;box-shadow:0 0 8px #6366f1;"></span>
+          <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#4ade80;box-shadow:0 0 8px #4ade80;"></span>
+          <span style="color:#38bdf8;font-family:monospace;font-size:0.85rem;margin-left:0.4rem;letter-spacing:0.08em;">skills.chart</span>
+          <span style="color:#546e7a;font-family:monospace;font-size:0.8rem;margin-left:auto;">SISR / 2024-2026</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2rem;">
+          <div style="position:relative;width:260px;height:260px;flex-shrink:0;">
+            <canvas id="skillsChart" width="260" height="260"></canvas>
+            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;pointer-events:none;">
+              <div style="color:#38bdf8;font-family:monospace;font-size:1.6rem;font-weight:700;line-height:1;">8</div>
+              <div style="color:#8892a4;font-family:monospace;font-size:0.7rem;letter-spacing:0.1em;">SKILLS</div>
+            </div>
+          </div>
+          <div id="skillsLegend" style="display:flex;flex-direction:column;gap:0.55rem;min-width:180px;"></div>
+        </div>
+        <script>
+          (function(){
+            const labels  = ['Réseaux','Sécurité','Admin. système','Virtualisation','Linux','Windows Server','Active Directory','Scripting'];
+            const values  = [18, 16, 15, 12, 12, 11, 9, 7];
+            const colors  = ['#38bdf8','#6366f1','#4ade80','#f59e0b','#f87171','#c084fc','#34d399','#fb923c'];
+            const ctx = document.getElementById('skillsChart').getContext('2d');
+            new Chart(ctx, {
+              type: 'doughnut',
+              data: {
+                labels: labels,
+                datasets: [{
+                  data: values,
+                  backgroundColor: colors.map(c => c + 'cc'),
+                  borderColor: colors,
+                  borderWidth: 2,
+                  hoverBackgroundColor: colors,
+                  hoverBorderWidth: 3,
+                  hoverOffset: 10
+                }]
+              },
+              options: {
+                cutout: '62%',
+                animation: { animateRotate: true, duration: 1200 },
+                plugins: {
+                  legend: { display: false },
+                  tooltip: {
+                    backgroundColor: '#161b22',
+                    borderColor: '#38bdf8',
+                    borderWidth: 1,
+                    titleColor: '#38bdf8',
+                    bodyColor: '#c9d1d9',
+                    titleFont: { family: 'monospace', size: 13 },
+                    bodyFont: { family: 'monospace', size: 12 },
+                    callbacks: {
+                      label: ctx => '  ' + ctx.label
+                    }
+                  }
+                }
+              }
+            });
+            const legend = document.getElementById('skillsLegend');
+            labels.forEach((l, i) => {
+              legend.innerHTML += `<div style="display:flex;align-items:center;gap:0.55rem;">
+                <span style="width:10px;height:10px;border-radius:50%;background:${colors[i]};box-shadow:0 0 6px ${colors[i]};flex-shrink:0;"></span>
+                <span style="color:#e2f0fb;font-family:monospace;font-size:0.78rem;">${l}</span>
+              </div>`;
+            });
+          })();
+        </script>
+      </div>
+
+      <div class="skills-box" style="max-width:700px;margin:1.5rem auto;">
+        <h3 style="color:#fff;margin-bottom:0.6rem;">&#127979; Formation</h3>
+        <p style="color:#fff;line-height:1.7;">
+          <strong>Etablissement :</strong> IFC Marseille<br>
+          <strong>Periode :</strong> 2024 &ndash; 2026<br>
+          <strong>Option :</strong> SISR &mdash; Solutions d'Infrastructure, Systemes et Reseaux
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><p>&copy; 2026 - Portfolio BTS SIO</p></footer>
+</body>
+</html>
