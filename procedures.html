@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toutes les procedures - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="brand">Jasmine Gilbert</div>
+      <button class="nav-toggle" aria-label="Ouvrir le menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li class="dropdown">
+          <a class="dropbtn" href="index.html#apropos">A propos &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="mon-entreprise.html">Mon entreprise</a></li>
+            <li><a href="mon-stage.html">Mon stage</a></li>
+            <li><a href="mon-cv.html">Mon CV</a></li>
+          </ul>
+        </li>
+        <li><a href="tcs.html">TCS</a></li><li><a href="bts-sio.html">BTS SIO</a></li>
+        <li class="dropdown">
+          <a class="dropbtn" href="#">Projets &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="procedures.html">Toutes les procedures</a></li>
+            <li><a href="schema.html">Sch&eacute;ma r&eacute;seau</a></li>
+            <li class="dropdown-section">Procedures projets professionnelles (E5)</li>
+            <li><a href="e5.html">Voir les procedures E5</a></li>
+            <li class="dropdown-section">Projets scolarises (E6)</li>
+            <li><a href="e6.html">Voir les procedures E6</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropbtn" href="index.html#veilles">Veilles &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html#veilles-tech">Veilles technologiques</a></li>
+            <li><a href="index.html#veilles-jur">Veilles juridiques</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <canvas id="bg-canvas"></canvas>
+  <main>
+    <section class="section">
+      <div class="skills-box">
+        <h2>Toutes les procedures</h2>
+        <p style="color:#111;margin-top:1rem;">Liste de toutes mes procedures (E5 et E6).</p>
+        <div style="margin-top:1rem;display:flex;gap:1rem;flex-wrap:wrap;justify-content:center">
+          <a href="e5.html" class="btn" style="text-decoration:none;padding:0.7rem 1.5rem">Procedures E5</a>
+          <a href="e6.html" class="btn" style="text-decoration:none;padding:0.7rem 1.5rem">Procedures E6</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><p>&copy; 2026 - Portfolio BTS SIO</p></footer>
+</body>
+</html>

@@ -1,0 +1,234 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mon CV - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="brand">Jasmine Gilbert</div>
+      <button class="nav-toggle" aria-label="Ouvrir le menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li class="dropdown">
+          <a class="dropbtn" href="#">A propos &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="mon-entreprise.html">Mon entreprise</a></li>
+            <li><a href="mon-stage.html">Mon stage</a></li>
+            <li><a href="mon-cv.html">Mon CV</a></li>
+          </ul>
+        </li>
+        <li><a href="tcs.html">TCS</a></li><li><a href="bts-sio.html">BTS SIO</a></li>
+        <li class="dropdown">
+          <a class="dropbtn" href="#">Projets &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="procedures.html">Toutes les proc&eacute;dures</a></li>
+            <li><a href="schema.html">Sch&eacute;ma r&eacute;seau</a></li>
+            <li class="dropdown-section">Proc&eacute;dures projets professionnelles (E5)</li>
+            <li><a href="e5.html">Voir les proc&eacute;dures E5</a></li>
+            <li class="dropdown-section">Projets scolarisés (E6)</li>
+            <li><a href="e6.html">Voir les proc&eacute;dures E6</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropbtn" href="#">Veilles &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html#veilles-tech">Veilles technologiques</a></li>
+            <li><a href="index.html#veilles-jur">Veilles juridiques</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <canvas id="bg-canvas"></canvas>
+  <main>
+    <section class="section">
+      <div class="cv-page-header">
+        <h1 class="cv-page-title"><span>Mon</span> CV</h1>
+        <p class="cv-page-sub">Parcours &amp; comp&eacute;tences</p>
+      </div>
+      <div class="cv-diagram">
+
+        <!-- SVG ARROWS -->
+        <svg class="cv-svg" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+              <feGaussianBlur stdDeviation="3" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+
+        </svg>
+
+        <!-- TOP LEFT: Alternante -->
+        <div class="cv-node cv-node--tl">
+          <div class="cv-node-card">
+            <div class="cv-node-card__header">
+              <span class="cv-node-card__label">Alternance</span>
+            </div>
+            <div class="cv-node-card__body">
+              <strong>Sauvegarde 13</strong>
+              <span class="cv-node-card__sub">D&eacute;c 2025 &mdash; aujourd&rsquo;hui</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TOP RIGHT: BTS SIO -->
+        <div class="cv-node cv-node--tr">
+          <div class="cv-node-card">
+            <div class="cv-node-card__header">
+              <span class="cv-node-card__label">Formation</span>
+            </div>
+            <div class="cv-node-card__body">
+              <strong>BTS SIO SISR</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- BL: Promotion -->
+        <div class="cv-node cv-node--bl">
+          <div class="cv-node-card">
+            <div class="cv-node-card__header">
+              <span class="cv-node-card__label">Promotion</span>
+            </div>
+            <div class="cv-node-card__body">
+              <strong>IFC Marseille</strong>
+              <span class="cv-node-card__sub">2024 &ndash; 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CENTER: Photo -->
+        <div class="cv-node cv-node--center">
+          <div class="cv-photo-frame">
+            <img src="images/jasmine%20ia.png" alt="Jasmine Gilbert" class="cv-main-img">
+          </div>
+        </div>
+
+        <!-- BOTTOM RIGHT: Bac -->
+        <div class="cv-node cv-node--br">
+          <div class="cv-node-card">
+            <div class="cv-node-card__header">
+              <span class="cv-node-card__label">Dipl&ocirc;me</span>
+            </div>
+            <div class="cv-node-card__body">
+              <strong>Baccalaur&eacute;at ES</strong>
+              <span class="cv-node-card__sub">Mention obtenue</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TIMELINE VERTICALE — droite de la photo -->
+        <div class="cv-vtl">
+          <div class="cv-vtl-line"></div>
+
+          <div class="cv-vtl-item">
+            <div class="cv-vtl-dot"></div>
+            <div class="cv-vtl-connector"></div>
+            <div class="cv-vtl-card">
+              <span class="cv-vtl-card__label">Alternance</span>
+              <strong>Sauvegarde 13</strong>
+              <span class="cv-vtl-card__sub">D&eacute;c 2025 &mdash; aujourd&rsquo;hui</span>
+            </div>
+          </div>
+
+          <div class="cv-vtl-item">
+            <div class="cv-vtl-dot"></div>
+            <div class="cv-vtl-connector"></div>
+            <div class="cv-vtl-card">
+              <span class="cv-vtl-card__label">Stage</span>
+              <strong>Sauvegarde 13</strong>
+              <span class="cv-vtl-card__sub">Sept &mdash; Nov 2025</span>
+            </div>
+          </div>
+
+          <div class="cv-vtl-item">
+            <div class="cv-vtl-dot"></div>
+            <div class="cv-vtl-connector"></div>
+            <div class="cv-vtl-card">
+              <span class="cv-vtl-card__label">Stage</span>
+              <strong>NETBFRS</strong>
+              <span class="cv-vtl-card__sub">Avr &mdash; Juin 2025</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+  <footer class="site-footer"><p>&copy; 2026 - Portfolio BTS SIO</p></footer>
+
+  <script>
+  function drawCvArrows() {
+    var diagram = document.querySelector('.cv-diagram');
+    var photo   = document.querySelector('.cv-photo-frame');
+    if (!diagram || !photo) return;
+
+    var dr = diagram.getBoundingClientRect();
+    var pr = photo.getBoundingClientRect();
+    if (dr.width === 0) return;
+
+    // photo bounds in diagram-local pixels
+    var ph = {
+      left:   pr.left   - dr.left,
+      right:  pr.right  - dr.left,
+      top:    pr.top    - dr.top,
+      bottom: pr.bottom - dr.top
+    };
+    var phH = ph.bottom - ph.top;
+
+    function setLine(lineId, x1, y1, x2, y2) {
+      var line = document.getElementById(lineId);
+      if (!line) return;
+      line.setAttribute('x1', x1.toFixed(1));
+      line.setAttribute('y1', y1.toFixed(1));
+      line.setAttribute('x2', x2.toFixed(1));
+      line.setAttribute('y2', y2.toFixed(1));
+    }
+
+    function cardCenter(sel) {
+      var el = document.querySelector(sel);
+      if (!el) return null;
+      var r = el.getBoundingClientRect();
+      return {
+        cx: r.left - dr.left + r.width  / 2,
+        cy: r.top  - dr.top  + r.height / 2,
+        left:   r.left  - dr.left,
+        right:  r.right - dr.left,
+        top:    r.top   - dr.top,
+        bottom: r.bottom - dr.top
+      };
+    }
+
+    var tl = cardCenter('.cv-node--tl .cv-node-card');
+    var tr = cardCenter('.cv-node--tr .cv-node-card');
+    var br = cardCenter('.cv-node--br .cv-node-card');
+
+    if (tl) setLine('cv-line-tl',
+      tl.right, tl.cy,
+      ph.left,  Math.max(ph.top, 0) + phH * 0.20);
+
+    if (tr) setLine('cv-line-tr',
+      tr.right, tr.cy,
+      ph.left,  Math.max(ph.top, 0) + phH * 0.50);
+
+    if (br) setLine('cv-line-br',
+      br.right, br.cy,
+      ph.left,  Math.max(ph.top, 0) + phH * 0.80);
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    drawCvArrows();
+    setTimeout(drawCvArrows, 200);
+    setTimeout(drawCvArrows, 700);
+  });
+  window.addEventListener('load',   drawCvArrows);
+  window.addEventListener('resize', drawCvArrows);
+  </script>
+</body>
+</html>

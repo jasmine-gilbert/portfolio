@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TCS - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="brand">Jasmine Gilbert</div>
+      <button class="nav-toggle" aria-label="Ouvrir le menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li class="dropdown">
+          <a class="dropbtn" href="#">A propos &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="mon-entreprise.html">Mon entreprise</a></li>
+            <li><a href="mon-stage.html">Mon stage</a></li>
+            <li><a href="mon-cv.html">Mon CV</a></li>
+          </ul>
+        </li>
+        <li><a href="tcs.html">TCS</a></li>
+        <li><a href="bts-sio.html">BTS SIO</a></li>
+        <li class="dropdown">
+          <a class="dropbtn" href="#">Projets &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="procedures.html">Toutes les proc&eacute;dures</a></li>
+            <li><a href="schema.html">Sch&eacute;ma r&eacute;seau</a></li>
+            <li class="dropdown-section">Proc&eacute;dures projets professionnelles (E5)</li>
+            <li><a href="e5.html">Voir les proc&eacute;dures E5</a></li>
+            <li class="dropdown-section">Projets scolarisés (E6)</li>
+            <li><a href="e6.html">Voir les proc&eacute;dures E6</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropbtn" href="#">Veilles &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html#veilles-tech">Veilles technologiques</a></li>
+            <li><a href="index.html#veilles-jur">Veilles juridiques</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <canvas id="bg-canvas"></canvas>
+  <main>
+    <section class="section">
+      <h2 class="section-title">TCS</h2>
+
+      <div class="tcs-photo-wrapper">
+        <img src="images/TCS%20OK.jpg" alt="TCS OK" class="tcs-photo">
+      </div>
+
+      <div class="tcs-grid">
+        <div class="tcs-card" onclick="openPdf('images/tcs%20GG.pdf')">
+          <div class="tcs-card-left">
+            <div class="tcs-pdf-badge">PDF</div>
+          </div>
+          <div class="tcs-card-body">
+            <span class="tcs-card-title">TCS GG</span>
+            <span class="tcs-card-sub">Tableau de Compétences &mdash; cliquer pour visualiser</span>
+          </div>
+          <div class="tcs-card-cta">Ouvrir &#8599;</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PDF MODAL -->
+  <div id="pdf-modal" class="pdf-modal" onclick="closePdf(event)">
+    <div class="pdf-modal-inner">
+      <button class="pdf-close" onclick="closePdfBtn()" aria-label="Fermer">&times;</button>
+      <iframe id="pdf-frame" src="" class="pdf-frame" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script>
+  function openPdf(src) {
+    document.getElementById('pdf-frame').src = src;
+    document.getElementById('pdf-modal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closePdfBtn() {
+    document.getElementById('pdf-modal').classList.remove('active');
+    document.getElementById('pdf-frame').src = '';
+    document.body.style.overflow = '';
+  }
+  function closePdf(e) {
+    if (e.target === document.getElementById('pdf-modal')) closePdfBtn();
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closePdfBtn();
+  });
+  </script>
+  <footer class="site-footer"><p>&copy; 2026 - Portfolio BTS SIO</p></footer>
+</body>
+</html>

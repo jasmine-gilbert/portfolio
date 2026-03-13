@@ -1,0 +1,224 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio BTS SIO - SISR</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+  <style>
+    .idx-schema-section {
+      max-width: 900px;
+      margin: 0 auto 3rem;
+      padding: 0 1.5rem;
+    }
+    .idx-schema-section-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #5570a0;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .idx-schema-card {
+      background: #eff6ff;
+      border: 2.5px solid #38bdf8;
+      border-radius: 18px;
+      box-shadow: 0 0 18px rgba(56,189,248,0.45), 0 4px 24px rgba(0,0,0,0.06);
+      overflow: hidden;
+      transition: box-shadow 0.25s;
+    }
+    .idx-schema-card:hover {
+      box-shadow: 0 0 32px rgba(56,189,248,0.6), 0 8px 32px rgba(0,0,0,0.08);
+    }
+    .idx-schema-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 1.4rem;
+      background: linear-gradient(90deg, #1a4a8a 0%, #2a7fc1 100%);
+    }
+    .idx-schema-card-header-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.9);
+    }
+    .idx-schema-zoom-btn {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 8px;
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.35rem 0.9rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .idx-schema-zoom-btn:hover { background: rgba(255,255,255,0.28); }
+    .idx-schema-img-wrap {
+      padding: 1.5rem;
+      display: flex;
+      justify-content: center;
+    }
+    .idx-schema-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      cursor: zoom-in;
+    }
+    /* Lightbox */
+    .idx-schema-lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(10,18,30,0.92);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    .idx-schema-lightbox.active { display: flex; }
+    .idx-schema-lightbox img {
+      max-width: 95vw;
+      max-height: 95vh;
+      border-radius: 10px;
+      box-shadow: 0 0 40px rgba(42,127,193,0.5);
+      object-fit: contain;
+    }
+    .idx-schema-lightbox-close {
+      position: fixed;
+      top: 18px;
+      right: 22px;
+      background: #2a7fc1;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 38px;
+      height: 38px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="brand">Jasmine Gilbert</div>
+      <button class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li class="dropdown">
+          <a class="dropbtn" href="#apropos">A propos ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="mon-entreprise.html">Mon entreprise</a></li>
+            <li><a href="mon-stage.html">Mon stage</a></li>
+            <li><a href="mon-cv.html">Mon CV</a></li>
+          </ul>
+        </li>
+        <li><a href="tcs.html">TCS</a></li><li><a href="bts-sio.html">BTS SIO</a></li>
+        <li class="dropdown">
+          <a class="dropbtn" href="#projets">Projets ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="procedures.html">Toutes les procédures</a></li>
+            <li><a href="schema.html">Schéma réseau</a></li>
+            <li class="dropdown-section">Procédures projets professionnelles (E5)</li>
+            <li><a href="e5.html">Voir les procédures E5</a></li>
+            <li class="dropdown-section">Projets scolarisés (E6)</li>
+            <li><a href="e6.html">Voir les procédures E6</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropbtn" href="#veilles">Veilles ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="#veilles-tech">Veilles technologiques</a></li>
+            <li><a href="#veilles-jur">Veilles juridiques</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <canvas id="bg-canvas"></canvas>
+  <main>
+
+    <section id="accueil" class="section">
+      <div class="hero-card">
+        <span class="hero-badge">BTS SIO &middot; SISR &middot; 2024&ndash;2026</span>
+        <h1 class="hero-card-title">PORTFOLIO<br><span>JASMINE GILBERT</span></h1>
+        <div class="hero-card-divider"></div>
+        <p class="hero-card-lead" id="hero-lead"></p>
+      </div>
+    </section>
+
+    <!-- Schéma réseau card -->
+    <section id="schema-accueil" class="section">
+      <div class="idx-schema-section">
+        <p class="idx-schema-section-title">Schéma réseau &mdash; Projets scolarisés E6</p>
+        <div class="idx-schema-card">
+          <div class="idx-schema-card-header">
+            <span class="idx-schema-card-header-title">Schéma réseau</span>
+            <button class="idx-schema-zoom-btn" onclick="idxOpenLightbox()">Agrandir ↗</button>
+          </div>
+          <div class="idx-schema-img-wrap">
+            <img src="images/SCHEMA.png" alt="Schéma réseau" class="idx-schema-img" onclick="idxOpenLightbox()">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="idx-schema-lightbox" id="idx-schema-lightbox" onclick="idxCloseLightbox()">
+      <button class="idx-schema-lightbox-close" onclick="idxCloseLightbox()" title="Fermer">&times;</button>
+      <img src="images/SCHEMA.png" alt="Schéma réseau agrandi">
+    </div>
+
+    <script>
+      function idxOpenLightbox() {
+        document.getElementById('idx-schema-lightbox').classList.add('active');
+      }
+      function idxCloseLightbox() {
+        document.getElementById('idx-schema-lightbox').classList.remove('active');
+      }
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') idxCloseLightbox();
+      });
+    </script>
+
+    <section id="contact" class="section">
+      <div class="contact-box">
+        <h2>Contact</h2>
+        <form id="contact-form" novalidate>
+          <label class="form-row">Prénom
+            <input type="text" name="prenom" required aria-label="Prénom">
+          </label>
+          <label class="form-row">Nom
+            <input type="text" name="nom" required aria-label="Nom">
+          </label>
+          <label class="form-row">Email
+            <input type="email" name="email" required aria-label="Email">
+          </label>
+          <label class="form-row">Questions / Message
+            <textarea name="message" rows="5" required aria-label="Questions"></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn">Envoyer</button>
+          </div>
+        </form>
+        <div id="contact-thanks" class="hidden">Merci — votre message a bien été reçu (envoi simulé).</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 - Portfolio BTS SIO</p>
+  </footer>
+</body>
+</html>
