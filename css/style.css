@@ -14,7 +14,7 @@ body{font-family:Segoe UI, Roboto, Arial, sans-serif;margin:0;background:#e4e9ef
 .nav-links a:hover{background:rgba(56,189,248,0.15);color:#0055aa;}
 .dropdown{position:relative}
 .dropdown .dropbtn{cursor:pointer}
-.dropdown-menu{position:absolute;left:0;top:100%;min-width:220px;background:rgba(240,244,248,0.97);border:1px solid rgba(56,189,248,0.25);box-shadow:0 8px 20px rgba(0,0,0,0.4);padding:0.5rem 0;display:none;z-index:50;border-radius:6px;backdrop-filter:blur(10px);}
+.dropdown-menu{position:absolute;left:0;top:100%;min-width:220px;background:rgba(240,244,248,0.97);border:1px solid rgba(56,189,248,0.25);box-shadow:0 8px 20px rgba(0,0,0,0.4);padding:0.5rem 0;display:none;z-index:1000;border-radius:6px;backdrop-filter:blur(10px);}
 .dropdown-menu li{list-style:none}
 .dropdown-menu a{padding:0.5rem 1rem;color:#111;display:block;}
 .dropdown-menu a:hover{color:#0055aa;background:rgba(56,189,248,0.1);}
