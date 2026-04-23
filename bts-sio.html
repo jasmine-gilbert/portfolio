@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BTS SIO - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Raleway:wght@400;600;700;800&family=Space+Grotesk:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -15,22 +18,22 @@
       <button class="nav-toggle" aria-label="Ouvrir le menu">&#9776;</button>
       <ul class="nav-links">
         <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="bts-sio.html">BTS SIO</a></li>
         <li class="dropdown">
           <a class="dropbtn" href="index.html#apropos">A propos &#9662;</a>
           <ul class="dropdown-menu">
+            <li><a href="mon-cv.html">Mon CV</a></li>
             <li><a href="mon-entreprise.html">Mon entreprise</a></li>
             <li><a href="mon-stage.html">Mon stage</a></li>
-            <li><a href="mon-cv.html">Mon CV</a></li>
           </ul>
         </li>
-        <li><a href="tcs.html">TCS</a></li><li><a href="bts-sio.html">BTS SIO</a></li>
+        <li><a href="tcs.html">TCS</a></li>
         <li class="dropdown">
           <a class="dropbtn" href="#">Projets &#9662;</a>
           <ul class="dropdown-menu">
-            <li><a href="schema.html">Sch&eacute;ma r&eacute;seau</a></li>
-            <li><a href="procedures.html">Proc&eacute;dures</a></li>
-            <li><a href="e5.html">Dossier E5</a></li>
-            <li><a href="e6.html">Dossier E6</a></li>
+            <li><a href="procedures.html">Mes Proc&eacute;dures</a></li>
+            <li><a href="e5.html">Dossier Professionnel E5</a></li>
+            <li><a href="e6.html">Dossier Scolaire E6</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -45,129 +48,144 @@
   </header>
   <canvas id="bg-canvas"></canvas>
   <main>
-    <section class="section">
-      <div class="highlight-box" style="max-width:700px;margin:2rem auto;">
-        <h2>BTS SIO : Option SISR</h2>
-        <p>Le BTS SIO (Services Informatiques aux Organisations) est un dipl&ocirc;me Bac+2 qui forme aux m&eacute;tiers de l'informatique. L'option SISR (Solutions d'Infrastructure, Syst&egrave;mes et R&eacute;seaux) est orient&eacute;e vers l'installation, la configuration et la maintenance des r&eacute;seaux et syst&egrave;mes informatiques en entreprise.</p>
-        <div class="skill-tags">
-          <span class="skill-tag">Installer</span>
-          <span class="skill-tag">Configurer</span>
-          <span class="skill-tag">S&eacute;curiser</span>
-          <span class="skill-tag">Maintenir</span>
-          <span class="skill-tag">Expliquer</span>
+    <section class="section bts-page">
+
+      <!-- Hero banner -->
+      <div class="bts-hero">
+        <div class="bts-hero__left">
+          <div class="bts-hero-badge">
+            <span class="bts-hero-badge__dot"></span>
+            <span class="bts-hero-badge__text">BTS&nbsp;SIO</span>
+            <span class="bts-hero-badge__slash">/</span>
+            <span class="bts-hero-badge__text">Option&nbsp;SISR</span>
+          </div>
+          <h1 class="bts-hero__title">Services Informatiques<br><span>aux Organisations</span></h1>
+          <p class="bts-hero__desc">Le BTS SIO forme aux m&eacute;tiers de l'informatique. L'option <strong>SISR</strong> est orient&eacute;e vers l'installation, la configuration et la maintenance des r&eacute;seaux et syst&egrave;mes en entreprise.</p>
+        </div>
+        <div class="bts-hero__right">
+          <div class="bts-stat"><span class="bts-stat__val">2</span><span class="bts-stat__lbl">ans</span></div>
+          <div class="bts-stat"><span class="bts-stat__val">8</span><span class="bts-stat__lbl">compétences</span></div>
+          <div class="bts-stat"><span class="bts-stat__val">Bac+2</span><span class="bts-stat__lbl">diplôme</span></div>
         </div>
       </div>
 
-      <div style="max-width:700px;margin:1.5rem auto;border-radius:20px;overflow:hidden;box-shadow:0 4px 32px rgba(42,127,193,0.18),0 1px 4px rgba(0,0,0,0.08);background:#fff;">
+      <!-- Main grid -->
+      <div class="bts-grid">
 
-        <!-- Header -->
-        <div style="background:linear-gradient(135deg,#1a4a8a 0%,#2a7fc1 50%,#3aafd6 100%);padding:1.1rem 1.6rem;display:flex;align-items:center;justify-content:space-between;">
-          <span style="font-weight:800;font-size:1rem;letter-spacing:0.12em;text-transform:uppercase;color:#fff;">Formation</span>
-          <span style="background:rgba(255,255,255,0.18);color:#fff;font-size:0.75rem;font-weight:700;letter-spacing:0.1em;padding:0.25rem 0.8rem;border-radius:20px;border:1px solid rgba(255,255,255,0.3);">BTS SIO · SISR</span>
+        <!-- École -->
+        <div class="bts-card bts-card--school">
+          <div class="bts-card__header">
+            <span class="bts-card__label">École</span>
+          </div>
+          <div class="bts-school-body">
+            <img src="images/IFC.png" alt="IFC" class="bts-school-logo">
+            <div>
+              <div class="bts-school-name">IFC</div>
+              <div class="bts-school-sub">Institut de Formation Continue</div>
+            </div>
+          </div>
+          <div class="bts-skills-list" style="margin-top:0.6rem;">
+            <div class="bts-skill-row"><span class="bts-skill-dot"></span>518 Avenue du Prado, Marseille</div>
+            <div class="bts-skill-row"><span class="bts-skill-dot"></span>2024 &ndash; 2026</div>
+            <div class="bts-skill-row"><span class="bts-skill-dot"></span>Alternance chez Sauvegarde13</div>
+          </div>
         </div>
 
-        <!-- Body -->
-        <div style="display:flex;align-items:stretch;">
-
-          <!-- Durée -->
-          <div style="width:130px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1.8rem 1rem;background:linear-gradient(180deg,#eaf4fd 0%,#f0f8ff 100%);border-right:1px solid #dbeafe;gap:0.3rem;">
-            <span style="font-size:2.6rem;font-weight:900;color:#2a7fc1;line-height:1;">2</span>
-            <span style="font-size:0.7rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:#2a7fc1;">ANS</span>
+        <!-- Compétences clés -->
+        <div class="bts-card">
+          <div class="bts-card__header">
+            <span class="bts-card__label">Compétences clés</span>
           </div>
+          <div class="bts-skills-list">
+            <div class="bts-skill-row"><span class="bts-skill-dot"></span>Installer et configurer des équipements réseau</div>
+            <div class="bts-skill-row"><span class="bts-skill-dot"></span>Sécuriser les infrastructures</div>
+            <div class="bts-skill-row"><span class="bts-skill-dot"></span>Administrer des systèmes Windows &amp; Linux</div>
+            <div class="bts-skill-row"><span class="bts-skill-dot"></span>Gérer la virtualisation</div>
+            <div class="bts-skill-row"><span class="bts-skill-dot"></span>Maintenir et dépanner les réseaux</div>
+          </div>
+          <div class="bts-tags" style="margin-top:1rem;">
+            <span class="bts-tag">Sécuriser</span>
+            <span class="bts-tag">Configurer</span>
+            <span class="bts-tag">Sécuriser</span>
+            <span class="bts-tag">Maintenir</span>
+          </div>
+        </div>
 
-          <!-- Infos école -->
-          <div style="flex:1;display:flex;flex-direction:column;justify-content:center;padding:1.6rem 1.6rem;gap:0.9rem;">
-
-            <div style="display:flex;align-items:center;gap:1rem;">
-              <img src="images/IFC.png" alt="IFC" style="width:54px;height:54px;object-fit:contain;border-radius:10px;border:1px solid #dbeafe;">
-              <div>
-                <div style="font-size:1.35rem;font-weight:900;color:#1a4a8a;letter-spacing:0.06em;line-height:1.1;">IFC</div>
-                <div style="font-size:0.82rem;color:#64748b;font-weight:500;margin-top:0.2rem;">Institut de Formation Continue</div>
+        <!-- Graphique compétences -->
+        <div class="bts-card bts-card--chart">
+          <div class="bts-card__header">
+            <span class="bts-card__label">Répartition des compétences</span>
+            <span class="bts-card__mono">skills.chart</span>
+          </div>
+          <div class="bts-chart-wrap">
+            <div id="skillsLegendLeft" class="bts-legend"></div>
+            <div class="bts-chart-container">
+              <canvas id="skillsChart" width="220" height="220"></canvas>
+              <div class="bts-chart-center">
+                <div class="bts-chart-center__val">6</div>
+                <div class="bts-chart-center__lbl">SKILLS</div>
               </div>
             </div>
-
-            <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
-              <span style="background:#eaf4fd;color:#2a7fc1;font-size:0.75rem;font-weight:700;padding:0.3rem 0.8rem;border-radius:20px;border:1px solid #bfdbfe;">Marseille</span>
-              <span style="background:#eaf4fd;color:#2a7fc1;font-size:0.75rem;font-weight:700;padding:0.3rem 0.8rem;border-radius:20px;border:1px solid #bfdbfe;">2024 – 2026</span>
-              <span style="background:#eaf4fd;color:#2a7fc1;font-size:0.75rem;font-weight:700;padding:0.3rem 0.8rem;border-radius:20px;border:1px solid #bfdbfe;">Alternance</span>
-            </div>
-
+            <div id="skillsLegendRight" class="bts-legend"></div>
           </div>
         </div>
+
       </div>
-
-      <div style="max-width:700px;margin:1.5rem auto;background:linear-gradient(135deg,#1a4a8a 0%,#2a7fc1 50%,#3aafd6 100%);border:2px solid #38bdf8;border-radius:16px;padding:1.8rem 1.5rem;box-shadow:0 0 24px rgba(56,189,248,0.2),0 4px 20px rgba(0,0,0,0.1);">
-        <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:1.4rem;">
-          <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#38bdf8;box-shadow:0 0 8px #38bdf8;"></span>
-          <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#6366f1;box-shadow:0 0 8px #6366f1;"></span>
-          <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#4ade80;box-shadow:0 0 8px #4ade80;"></span>
-          <span style="color:#111;font-family:monospace;font-size:0.85rem;margin-left:0.4rem;letter-spacing:0.08em;">skills.chart</span>
-          <span style="color:#111;font-family:monospace;font-size:0.8rem;margin-left:auto;">SISR / 2024-2026</span>
-        </div>
-        <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2rem;">
-          <div style="position:relative;width:260px;height:260px;flex-shrink:0;">
-            <canvas id="skillsChart" width="260" height="260"></canvas>
-            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;pointer-events:none;">
-              <div style="color:#111;font-family:monospace;font-size:1.6rem;font-weight:700;line-height:1;">8</div>
-              <div style="color:#111;font-family:monospace;font-size:0.7rem;letter-spacing:0.1em;">SKILLS</div>
-            </div>
-          </div>
-          <div id="skillsLegend" style="display:flex;flex-direction:column;gap:0.55rem;min-width:180px;"></div>
-        </div>
-        <script>
-          (function(){
-            const labels  = ['Réseaux','Sécurité','Admin. système','Virtualisation','Linux','Windows Server','Active Directory','Scripting'];
-            const values  = [18, 16, 15, 12, 12, 11, 9, 7];
-            const colors  = ['#38bdf8','#a855f7','#4ade80','#f59e0b','#f87171','#c084fc','#34d399','#fb923c'];
-            const ctx = document.getElementById('skillsChart').getContext('2d');
-            new Chart(ctx, {
-              type: 'doughnut',
-              data: {
-                labels: labels,
-                datasets: [{
-                  data: values,
-                  backgroundColor: colors.map(c => c + 'cc'),
-                  borderColor: colors,
-                  borderWidth: 2,
-                  hoverBackgroundColor: colors,
-                  hoverBorderWidth: 3,
-                  hoverOffset: 10
-                }]
-              },
-              options: {
-                cutout: '62%',
-                animation: { animateRotate: true, duration: 1200 },
-                plugins: {
-                  legend: { display: false },
-                  tooltip: {
-                    backgroundColor: '#161b22',
-                    borderColor: '#38bdf8',
-                    borderWidth: 1,
-                    titleColor: '#38bdf8',
-                    bodyColor: '#111',
-                    titleFont: { family: 'monospace', size: 13 },
-                    bodyFont: { family: 'monospace', size: 12 },
-                    callbacks: {
-                      label: ctx => '  ' + ctx.label
-                    }
-                  }
-                }
-              }
-            });
-            const legend = document.getElementById('skillsLegend');
-            labels.forEach((l, i) => {
-              legend.innerHTML += `<div style="display:flex;align-items:center;gap:0.55rem;">
-                <span style="width:10px;height:10px;border-radius:50%;background:${colors[i]};box-shadow:0 0 6px ${colors[i]};flex-shrink:0;"></span>
-                <span style="color:#111;font-family:monospace;font-size:0.78rem;">${l}</span>
-              </div>`;
-            });
-          })();
-        </script>
-      </div>
-
-
     </section>
   </main>
   <footer class="site-footer"><p>&copy; 2026 - Portfolio BTS SIO</p></footer>
+
+  <script>
+    (function(){
+      const labels = ['Réseaux','Sécurité','Admin. système','Virtualisation','Windows Server','Active Directory'];
+      const values = [20, 18, 17, 14, 13, 11];
+      const colors = ['#1a6fe0','#6366f1','#4ade80','#f59e0b','#a78bfa','#34d399'];
+      const ctx = document.getElementById('skillsChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels,
+          datasets: [{
+            data: values,
+            backgroundColor: colors.map(c => c + 'cc'),
+            borderColor: colors,
+            borderWidth: 2,
+            hoverBackgroundColor: colors,
+            hoverOffset: 8
+          }]
+        },
+        options: {
+          cutout: '65%',
+          animation: { animateRotate: true, duration: 1200 },
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              backgroundColor: '#0d1b2a',
+              borderColor: '#93c5fd',
+              borderWidth: 1,
+              titleColor: '#93c5fd',
+              bodyColor: '#e2e8f0',
+              callbacks: { label: c => '  ' + c.label }
+            }
+          }
+        }
+      });
+      const legendLeft = document.getElementById('skillsLegendLeft');
+      const legendRight = document.getElementById('skillsLegendRight');
+      labels.forEach((l, i) => {
+        const row = document.createElement('div');
+        row.className = 'bts-legend-row';
+        row.innerHTML = `<span class="bts-legend-dot" style="background:${colors[i]}"></span><span class="bts-legend-label">${l}</span>`;
+        (i < 3 ? legendLeft : legendRight).appendChild(row);
+      });
+    })();
+  </script>
+        const row = document.createElement('div');
+        row.className = 'bts-legend-row';
+        row.innerHTML = `<span class="bts-legend-dot" style="background:${colors[i]}"></span><span class="bts-legend-label">${l}</span>`;
+        legend.appendChild(row);
+      });
+    })();
+  </script>
 </body>
 </html>

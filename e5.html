@@ -1,9 +1,12 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Procedures E5 - Portfolio</title>
+  <title>Dossier Professionnel E5 - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
 </head>
@@ -14,22 +17,22 @@
       <button class="nav-toggle" aria-label="Ouvrir le menu">&#9776;</button>
       <ul class="nav-links">
         <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="bts-sio.html">BTS SIO</a></li>
         <li class="dropdown">
           <a class="dropbtn" href="index.html#apropos">A propos &#9662;</a>
           <ul class="dropdown-menu">
+            <li><a href="mon-cv.html">Mon CV</a></li>
             <li><a href="mon-entreprise.html">Mon entreprise</a></li>
             <li><a href="mon-stage.html">Mon stage</a></li>
-            <li><a href="mon-cv.html">Mon CV</a></li>
           </ul>
         </li>
-        <li><a href="tcs.html">TCS</a></li><li><a href="bts-sio.html">BTS SIO</a></li>
+        <li><a href="tcs.html">TCS</a></li>
         <li class="dropdown">
           <a class="dropbtn" href="#">Projets &#9662;</a>
           <ul class="dropdown-menu">
-            <li><a href="schema.html">Sch&eacute;ma r&eacute;seau</a></li>
-            <li><a href="procedures.html">Proc&eacute;dures</a></li>
-            <li><a href="e5.html">Dossier E5</a></li>
-            <li><a href="e6.html">Dossier E6</a></li>
+            <li><a href="procedures.html">Mes Proc&eacute;dures</a></li>
+            <li><a href="e5.html">Dossier Professionnel E5</a></li>
+            <li><a href="e6.html">Dossier Scolaire E6</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -44,42 +47,111 @@
   </header>
   <canvas id="bg-canvas"></canvas>
   <main>
-    <section class="section">
-      <div style="
-          border:2px solid #38bdf8;
-          border-radius:16px;
-          background:rgba(56,189,248,0.06);
-          box-shadow:0 0 18px rgba(56,189,248,0.55), 0 0 40px rgba(56,189,248,0.2), inset 0 0 10px rgba(56,189,248,0.08);
-          overflow:hidden;
-          max-width:680px;
-          margin:0 auto;
-        ">
-          <div style="
-            background:linear-gradient(90deg,#1a4a8a 0%,#2a7fc1 100%);
-            padding:0.75rem 1.2rem;
-            font-weight:700;
-            font-size:0.95rem;
-            letter-spacing:0.06em;
-            text-transform:uppercase;
-            color:rgba(255,255,255,0.92);
-            text-shadow:0 0 8px rgba(56,189,248,0.7);
-          ">infrastructure r&eacute;seau S3P2</div>
-          <div style="padding:1.2rem;display:flex;justify-content:center;">
-            <img
-              src="images/SCHEMA.png"
-              alt="Infrastructure réseau S3P2"
-              style="
-                max-width:100%;
-                height:auto;
-                border-radius:10px;
-                border:1px solid rgba(56,189,248,0.4);
-                display:block;
-              "
-            >
+    <section class="section home-v3">
+
+      <!-- Banner -->
+      <div class="bento-banner">
+        <div class="bento-banner__left">
+          <span class="hero-badge">BTS SIO &mdash; SISR</span>
+          <h1 class="bento-title">DOSSIER<br><span>PROFESSIONNEL E5</span></h1>
+          <p class="bento-banner__desc">Projets réalisés durant les expériences professionnelles</p>
+        </div>
+        <div class="bento-banner__right">
+          <span class="bento-banner__tag">NETBFRS</span>
+          <span class="bento-banner__tag">Wi-Fi</span>
+          <span class="bento-banner__tag">SONOS</span>
+          <span class="bento-banner__tag">FOG</span>
+          <span class="bento-banner__tag">Sauvegarde13</span>
+        </div>
+      </div>
+
+      <!-- Bento grid -->
+      <div class="bento-grid" style="grid-auto-rows:auto;">
+
+        <div style="grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
+          <div class="bento-tile">
+            <span class="bento-tile__label">NETBFRS</span>
+            <span class="bento-tile__sub"><strong style="color:#0d1b2a;">MODERNISATION</strong> et <strong style="color:#0d1b2a;">OPTIMISATION</strong> d’un réseau Wi-Fi domestique</span>
+            <span class="bento-tile__sub"><strong style="color:#0d1b2a;">RECONFIGURATION</strong> d’un système audio multiroom SONOS</span>
+          </div>
+          <div class="bento-tile">
+            <span class="bento-tile__label">Sauvegarde13</span>
+            <span class="bento-tile__sub"><strong style="color:#0d1b2a;">DÉPLOIEMENT</strong> et <strong style="color:#0d1b2a;">GESTION</strong> des postes clients via le serveur <strong style="color:#0d1b2a;">FOG</strong></span>
           </div>
         </div>
+        <div style="grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
+          <div class="bento-tile e5-carousel-wrap" style="padding:0;overflow:hidden;position:relative;min-height:300px;">
+            <div class="e5-carousel">
+              <img src="images/baie.jpeg" alt="Baie info" class="e5-slide active">
+              <img src="images/borne wifi.PNG" alt="Borne Wi-Fi" class="e5-slide">
+              <img src="images/borne wifi 2.jpeg" alt="Borne Wi-Fi 2" class="e5-slide">
+              <img src="images/sonos.jpeg" alt="SONOS" class="e5-slide">
+            </div>
+            <div class="e5-dots">
+              <span class="e5-dot active"></span>
+              <span class="e5-dot"></span>
+              <span class="e5-dot"></span>
+              <span class="e5-dot"></span>
+            </div>
+          </div>
+          <div class="bento-tile e5-carousel-wrap" style="padding:0;overflow:hidden;position:relative;min-height:300px;">
+            <div class="e5-carousel">
+              <img src="images/interface fog.png" alt="Interface FOG" class="e5-slide active">
+              <img src="images/capturer deployer.png" alt="Capturer D�ployer" class="e5-slide">
+              <img src="images/ordinateurs deployer.jpeg" alt="Ordinateurs D�ploy�s" class="e5-slide">
+            </div>
+            <div class="e5-dots">
+              <span class="e5-dot active"></span>
+              <span class="e5-dot"></span>
+              <span class="e5-dot"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bento-tile" style="grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;">
+          <div>
+            <div class="bento-tile__label" style="margin-bottom:0.4rem;">Voici mon dossier professionnel détaillé</div>
+          </div>
+          <a href="Dossier E5 gg.pdf" target="_blank" class="tcs-dl-card" style="text-decoration:none;min-width:unset;background:#f1f5f9;box-shadow:0 2px 12px rgba(0,0,0,0.07);border:1.5px solid #e2e8f0;">
+            <div class="tcs-dl-icon" style="display:flex;align-items:center;justify-content:center;background:#64748b;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </div>
+            <div>
+              <span class="tcs-dl-title" style="color:#0d1b2a;">Dossier Professionnel E5</span>
+              <span class="tcs-dl-sub" style="display:block;color:#64748b;">PDF – Dossier complet</span>
+            </div>
+            <span class="tcs-dl-btn" style="padding:0.45rem 1rem;font-size:0.85rem;background:#64748b;border-color:#64748b;color:#fff;">Ouvrir</span>
+          </a>
+        </div>
+
     </section>
   </main>
   <footer class="site-footer"><p>&copy; 2026 - Portfolio BTS SIO</p></footer>
+
+  <style>
+    .e5-carousel { width:100%; height:300px; position:relative; overflow:hidden; border-radius:inherit; background:#f8fafc; }
+    .e5-slide { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; opacity:0; transition:opacity 0.6s ease; }
+    .e5-slide.active { opacity:1; }
+    .e5-dots { position:absolute; bottom:12px; left:50%; transform:translateX(-50%); display:flex; gap:8px; z-index:10; }
+    .e5-dot { width:8px; height:8px; border-radius:50%; background:rgba(0,0,0,0.2); cursor:pointer; transition:background 0.3s; }
+    .e5-dot.active { background:#0d1b2a; }
+  </style>
+
+  <script>
+    document.querySelectorAll('.e5-carousel-wrap').forEach(wrap => {
+      const slides = wrap.querySelectorAll('.e5-slide');
+      const dots = wrap.querySelectorAll('.e5-dot');
+      let current = 0;
+      function goTo(n) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = (n + slides.length) % slides.length;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+      }
+      dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+      setInterval(() => goTo(current + 1), 3000);
+    });
+  </script>
 </body>
 </html>

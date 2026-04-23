@@ -3,8 +3,8 @@
    ============================================= */
 
 .stage-body {
-  font-family: ''Inter'', sans-serif;
-  background: #e4e9ef;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
   color: #111;
   margin: 0;
   padding: 0;
@@ -22,7 +22,7 @@
 /* HERO */
 .stage-hero {
   padding: 6rem 0 3rem;
-  border-bottom: 1px solid rgba(42,127,193,0.15);
+  border-bottom: 1px solid rgba(26,111,224,0.15);
 }
 
 .stage-tag {
@@ -35,11 +35,11 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #fff;
-  background: linear-gradient(90deg, #1a4a8a 0%, #2a7fc1 60%, #3aafd6 100%);
+  background: linear-gradient(90deg, #0f4cac 0%, #1a6fe0 60%, #4d8ded 100%);
   border-radius: 999px;
   padding: 0.45rem 1.2rem;
   margin-bottom: 1.6rem;
-  box-shadow: 0 0 14px rgba(42,127,193,0.45), 0 2px 8px rgba(0,0,0,0.12);
+  box-shadow: 0 0 14px rgba(26,111,224,0.45), 0 2px 8px rgba(0,0,0,0.12);
   position: relative;
   overflow: hidden;
 }
@@ -66,8 +66,8 @@
   line-height: 1;
 }
 .stage-title span {
-  color: #2a7fc1;
-  text-shadow: 0 0 24px rgba(42,127,193,0.45);
+  color: #1a6fe0;
+  text-shadow: 0 0 24px rgba(26,111,224,0.45);
 }
 
 .stage-subtitle {
@@ -82,13 +82,13 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 3rem 0;
-  border-bottom: 1px solid rgba(42,127,193,0.15);
+  border-bottom: 1px solid rgba(26,111,224,0.15);
 }
 
 .stage-stat { padding: 0 2rem 0 0; }
 .stage-stat + .stage-stat {
   padding-left: 2rem;
-  border-left: 1px solid rgba(42,127,193,0.15);
+  border-left: 1px solid rgba(26,111,224,0.15);
 }
 
 .stage-stat-label {
@@ -97,7 +97,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: #2a7fc1;
+  color: #1a6fe0;
   margin: 0 0 0.4rem;
 }
 .stage-stat-value {
@@ -113,7 +113,7 @@
 /* SECTIONS */
 .stage-section {
   padding: 3rem 0;
-  border-bottom: 1px solid rgba(42,127,193,0.15);
+  border-bottom: 1px solid rgba(26,111,224,0.15);
 }
 .stage-section:last-child { border-bottom: none; }
 
@@ -123,10 +123,10 @@
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #2a7fc1;
+  color: #1a6fe0;
   margin: 0 0 1rem;
 }
-.stage-section-label::before { content: ''// ''; opacity: 0.5; }
+.stage-section-label::before { content: ''; opacity: 0.5; }
 
 .stage-section-title {
   font-size: 1.5rem;
@@ -156,7 +156,7 @@
   top: 8px;
   bottom: 8px;
   width: 1px;
-  background: rgba(42,127,193,0.2);
+  background: rgba(26,111,224,0.2);
 }
 
 .stage-tl-item {
@@ -172,8 +172,8 @@
   flex-shrink: 0;
   width: 38px;
   height: 38px;
-  background: #e4e9ef;
-  border: 1.5px solid #2a7fc1;
+  background: #f0f4f8;
+  border: 1.5px solid #1a6fe0;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -181,23 +181,23 @@
   font-family: ''JetBrains Mono'', ''Courier New'', monospace;
   font-size: 0.62rem;
   font-weight: 700;
-  color: #2a7fc1;
+  color: #1a6fe0;
   position: relative;
   z-index: 1;
-  box-shadow: 0 0 10px rgba(42,127,193,0.25);
+  box-shadow: 0 0 10px rgba(26,111,224,0.25);
 }
 
 .stage-tl-content {
-  background: rgba(42,127,193,0.04);
-  border: 1px solid rgba(42,127,193,0.12);
+  background: rgba(26,111,224,0.04);
+  border: 1px solid rgba(26,111,224,0.12);
   border-radius: 8px;
   padding: 0.9rem 1.2rem;
   flex: 1;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 .stage-tl-content:hover {
-  border-color: rgba(42,127,193,0.35);
-  box-shadow: 0 0 16px rgba(42,127,193,0.1);
+  border-color: rgba(26,111,224,0.35);
+  box-shadow: 0 0 16px rgba(26,111,224,0.1);
 }
 .stage-tl-content strong {
   display: block;
@@ -210,7 +210,7 @@
 
 /* FOOTER */
 .stage-body .site-footer {
-  border-top: 1px solid rgba(42,127,193,0.3);
+  border-top: 1px solid rgba(26,111,224,0.3);
   color: rgba(0,0,0,0.4);
 }
 
@@ -223,24 +223,24 @@
 }
 
 .mission-card {
-  background: #d8dfe6;
-  border: 1px solid rgba(42,127,193,0.2);
+  background: #f0f4f8;
+  border: 1px solid rgba(26,111,224,0.2);
   border-radius: 12px;
   overflow: hidden;
   transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 
 .mission-card:hover {
-  border-color: rgba(42,127,193,0.45);
-  box-shadow: 0 4px 20px rgba(42,127,193,0.12);
+  border-color: rgba(26,111,224,0.45);
+  box-shadow: 0 4px 20px rgba(26,111,224,0.12);
   transform: translateY(-3px);
 }
 
 .mission-card-img {
   width: 100%;
   height: 160px;
-  background: rgba(42,127,193,0.08);
-  border-bottom: 1px solid rgba(42,127,193,0.15);
+  background: rgba(26,111,224,0.08);
+  border-bottom: 1px solid rgba(26,111,224,0.15);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,7 +259,7 @@
   font-family: 'JetBrains Mono', 'Courier New', monospace;
   font-size: 2.2rem;
   font-weight: 700;
-  color: rgba(42,127,193,0.3);
+  color: rgba(26,111,224,0.3);
   /* hidden once a real img is added */
   position: absolute;
 }
@@ -293,9 +293,10 @@
   .stage-stat + .stage-stat {
     padding-left: 0;
     border-left: none;
-    border-top: 1px solid rgba(42,127,193,0.15);
+    border-top: 1px solid rgba(26,111,224,0.15);
     padding-top: 1.5rem;
   }
   .stage-title { font-size: 3rem; }
   .mission-grid { grid-template-columns: 1fr 1fr; }
 }
+

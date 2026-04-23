@@ -12,7 +12,7 @@
   const dropdowns = document.querySelectorAll('.dropdown');
   dropdowns.forEach(dd=>{
     dd.addEventListener('click', (e)=>{
-      if(window.innerWidth <= 800){
+      if(window.innerWidth <= 900){
         // toggle only the clicked dropdown menu
         const menu = dd.querySelector('.dropdown-menu');
         if(menu) menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
@@ -23,7 +23,7 @@
 
   // Close menus when clicking outside
   document.addEventListener('click', ()=>{
-    if(window.innerWidth <= 800){
+    if(window.innerWidth <= 900){
       document.querySelectorAll('.dropdown-menu').forEach(m=>m.style.display='none');
     }
   });
@@ -119,7 +119,7 @@
   // Typewriter effect on hero lead paragraph
   const heroLead = document.getElementById('hero-lead');
   if (heroLead) {
-    const text = "Bienvenue sur mon portfolio pr\u00e9sentant mes r\u00e9alisations, mes projets et mes pratiques acquises durant mes deux ann\u00e9es de BTS SIO, option SISR, sp\u00e9cialis\u00e9 syst\u00e8mes et r\u00e9seaux.";
+    const text = "Bienvenue, mon portfolio retracera l\u2019ensemble de mes projets et de mon apprentissage au cours de ma scolarit\u00e9 en BTS SIO orient\u00e9 syst\u00e8me et r\u00e9seaux.";
     let i = 0;
     // Start after CSS title typing finishes (~2.8s)
     setTimeout(() => {

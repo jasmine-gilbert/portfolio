@@ -1,9 +1,12 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio BTS SIO - SISR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Raleway:wght@400;600;700;800&family=Space+Grotesk:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
 </head>
@@ -14,26 +17,26 @@
       <button class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
       <ul class="nav-links">
         <li><a href="#accueil">Accueil</a></li>
+        <li><a href="bts-sio.html">BTS SIO</a></li>
         <li class="dropdown">
-          <a class="dropbtn" href="#apropos">A propos ▾</a>
+          <a class="dropbtn" href="#apropos">À propos</a>
           <ul class="dropdown-menu">
+            <li><a href="mon-cv.html">Mon CV</a></li>
             <li><a href="mon-entreprise.html">Mon entreprise</a></li>
             <li><a href="mon-stage.html">Mon stage</a></li>
-            <li><a href="mon-cv.html">Mon CV</a></li>
           </ul>
         </li>
-        <li><a href="tcs.html">TCS</a></li><li><a href="bts-sio.html">BTS SIO</a></li>
+        <li><a href="tcs.html">TCS</a></li>
         <li class="dropdown">
-          <a class="dropbtn" href="#projets">Projets ▾</a>
+          <a class="dropbtn" href="#projets">Projets</a>
           <ul class="dropdown-menu">
-            <li><a href="schema.html">Schéma réseau</a></li>
-            <li><a href="procedures.html">Proc&eacute;dures</a></li>
-            <li><a href="e5.html">Dossier E5</a></li>
-            <li><a href="e6.html">Dossier E6</a></li>
+            <li><a href="procedures.html">Mes Proc&eacute;dures</a></li>
+            <li><a href="e5.html">Dossier Professionnel E5</a></li>
+            <li><a href="e6.html">Dossier Scolaire E6</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a class="dropbtn" href="#veilles">Veilles ▾</a>
+          <a class="dropbtn" href="#veilles">Veilles</a>
           <ul class="dropdown-menu">
             <li><a href="veille-tech.html">Veilles technologiques</a></li>
             <li><a href="veille-jur.html">Veilles juridiques</a></li>
@@ -46,17 +49,94 @@
   <canvas id="bg-canvas"></canvas>
   <main>
 
-    <section id="accueil" class="section">
-      <div class="hero-card">
-        <span class="hero-badge">BTS SIO &middot; SISR &middot; 2024&ndash;2026</span>
-        <h1 class="hero-card-title">PORTFOLIO<br><span>JASMINE GILBERT</span></h1>
-        <div class="hero-card-divider"></div>
-        <p class="hero-card-lead" id="hero-lead"></p>
+    <section id="accueil" class="section home-v3">
+
+      <!-- Banner -->
+      <div class="bento-banner">
+        <div class="bento-banner__left">
+          <span class="hero-badge">Laur&eacute;at 2024</span>
+          <h1 class="bento-title">PORTFOLIO<br><span>JASMINE GILBERT</span></h1>
+          <p class="hero-card-lead" id="hero-lead"></p>
+        </div>
+        <div class="bento-banner__right">
+          <span class="bento-banner__tag">BTS&nbsp;SIO</span>
+          <span class="bento-banner__tag">SISR</span>
+          <span class="bento-banner__tag">Réseau</span>
+          <span class="bento-banner__tag">Syst&egrave;me</span>
+          <span class="bento-banner__tag">2024</span>
+        </div>
       </div>
+
+      <!-- Bento grid -->
+      <div class="bento-grid">
+
+        <!-- BTS SIO à large -->
+        <a href="bts-sio.html" class="bento-tile bento-tile--accent bento-tile--span2">
+          <span class="bento-tile__label">BTS SIO</span>
+          <span class="bento-tile__sub">Formation &amp; option SISR</span>
+          <span class="bento-tile__arrow">&#8594;</span>
+        </a>
+
+        <!-- A propos -->
+        <a href="mon-cv.html" class="bento-tile">
+          <span class="bento-tile__label">A propos</span>
+          <span class="bento-tile__sub">Mon CV</span>
+        </a>
+
+        <!-- Mon entreprise -->
+        <a href="mon-entreprise.html" class="bento-tile">
+          <span class="bento-tile__label">Entreprise</span>
+          <span class="bento-tile__sub">Lieu de stage</span>
+        </a>
+
+        <!-- Mon stage -->
+        <a href="mon-stage.html" class="bento-tile">
+          <span class="bento-tile__label">Stage</span>
+          <span class="bento-tile__sub">Rapport &amp; missions</span>
+        </a>
+
+        <!-- Projets à large groupe -->
+        <div class="bento-tile bento-tile--span2 bento-tile--group">
+          <span class="bento-tile__label">PROJETS</span>
+          <div class="bento-subtiles">
+            <a href="procedures.html" class="bento-subtile">
+              <span class="bento-subtile__label">Mes proc&eacute;dures</span>
+              <span class="bento-subtile__arrow">&#8594;</span>
+            </a>
+            <a href="e5.html" class="bento-subtile">
+              <span class="bento-subtile__label">Projets professionnels E5</span>
+              <span class="bento-subtile__arrow">&#8594;</span>
+            </a>
+            <a href="e6.html" class="bento-subtile">
+              <span class="bento-subtile__label">Projet Scolaire E6</span>
+              <span class="bento-subtile__arrow">&#8594;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Veilles -->
+        <div class="bento-tile bento-tile--group bento-tile--group-sm">
+          <span class="bento-tile__label">VEILLES</span>
+          <div class="bento-subtiles">
+            <a href="veille-tech.html" class="bento-subtile">
+              <span class="bento-subtile__label">Veille technologique</span>
+              <span class="bento-subtile__arrow">&#8594;</span>
+            </a>
+            <a href="veille-jur.html" class="bento-subtile">
+              <span class="bento-subtile__label">Veille juridique</span>
+              <span class="bento-subtile__arrow">&#8594;</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Contact CTA -->
     </section>
 
     <section id="contact" class="section">
       <div class="contact-box">
+        <h2 class="contact-box__title">Plus de questions&nbsp;? Contactez nous&nbsp;!</h2>
         <form id="contact-form" novalidate>
           <label class="form-row">Prénom
             <input type="text" name="prenom" required aria-label="Prénom">
@@ -74,13 +154,14 @@
             <button type="submit" class="btn">Envoyer</button>
           </div>
         </form>
-        <div id="contact-thanks" class="hidden">Merci — votre message a bien été reçu (envoi simulé).</div>
+        <div id="contact-thanks" class="hidden">Merci � votre message a bien �t� re�u (envoi simul�).</div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 - Portfolio BTS SIO</p>
+    <p>� 2026 - Portfolio BTS SIO</p>
   </footer>
 </body>
 </html>
+

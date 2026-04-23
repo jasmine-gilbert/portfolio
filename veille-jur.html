@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
@@ -14,26 +14,26 @@
       <button class="nav-toggle" aria-label="Ouvrir le menu">&#9776;</button>
       <ul class="nav-links">
         <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="bts-sio.html">BTS SIO</a></li>
         <li class="dropdown">
           <a class="dropbtn" href="index.html#apropos">A propos &#9662;</a>
           <ul class="dropdown-menu">
+            <li><a href="mon-cv.html">Mon CV</a></li>
             <li><a href="mon-entreprise.html">Mon entreprise</a></li>
             <li><a href="mon-stage.html">Mon stage</a></li>
-            <li><a href="mon-cv.html">Mon CV</a></li>
           </ul>
         </li>
-        <li><a href="tcs.html">TCS</a></li><li><a href="bts-sio.html">BTS SIO</a></li>
+        <li><a href="tcs.html">TCS</a></li>
         <li class="dropdown">
           <a class="dropbtn" href="#">Projets &#9662;</a>
           <ul class="dropdown-menu">
-            <li><a href="schema.html">Sch&eacute;ma r&eacute;seau</a></li>
-            <li><a href="procedures.html">Proc&eacute;dures</a></li>
-            <li><a href="e5.html">Dossier E5</a></li>
-            <li><a href="e6.html">Dossier E6</a></li>
+            <li><a href="procedures.html">Mes Proc&eacute;dures</a></li>
+            <li><a href="e5.html">Dossier Professionnel E5</a></li>
+            <li><a href="e6.html">Dossier Scolaire E6</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a class="dropbtn" href="#">Veilles &#9662;</a>
+          <a class="dropbtn" href="veilles.html">Veilles &#9662;</a>
           <ul class="dropdown-menu">
             <li><a href="veille-tech.html">Veilles technologiques</a></li>
             <li><a href="veille-jur.html">Veilles juridiques</a></li>
@@ -45,11 +45,66 @@
 
   <canvas id="bg-canvas"></canvas>
   <main>
-    <section class="section">
-      <div style="text-align:center;padding:2rem 1rem 1rem;">
-        <span style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0.8rem;letter-spacing:0.18em;text-transform:uppercase;color:#2a7fc1;opacity:0.8;">Veille Juridique</span>
-        <h1 style="font-size:clamp(3.5rem,10vw,6rem);font-weight:800;letter-spacing:-0.04em;color:#0f172a;margin:0.2rem 0 0.5rem;line-height:1;"><span style="color:#2a7fc1;text-shadow:0 0 24px rgba(42,127,193,0.45);">VEILLE</span> JURIDIQUE</h1>
+    <section class="section home-v3">
+
+      <div class="bento-banner">
+        <div class="bento-banner__left">
+          <span class="hero-badge">Veille Juridique</span>
+          <h1 class="bento-title">COOKIE ET PROTECTION<br><span>DES DONN&#201;ES</span></h1>
+        </div>
+        <div class="bento-banner__right" style="max-width:270px;align-self:center;">
+          <img src="images/cookie.jpg" alt="Cookie" style="width:270px;max-width:100%;height:auto;border-radius:12px;">
+        </div>
       </div>
+
+      <div class="bento-grid" style="grid-auto-rows:auto;">
+
+        <div class="bento-tile" style="grid-column:1/-1;">
+          <span class="bento-tile__label" style="margin-bottom:0.5rem;">D&#233;finition</span>
+          <span class="bento-tile__sub" style="font-size:1rem;">Petit fichier texte enregistr&#233; sur les appareils (ordinateurs, t&#233;l&#233;phones) lorsque l&#x27;on visite un site web.<br>M&#233;moire du site web sur le navigateur.</span>
+        </div>
+
+        <div class="bento-tile" style="grid-column:1/-1;">
+          <span class="bento-tile__label" style="margin-bottom:0.5rem;">But ?</span>
+          <span class="bento-tile__sub" style="font-size:1rem;">M&#233;moriser les pr&#233;f&#233;rences, maintenir les sessions ouvertes, analyser la navigation, publicit&#233;s cibl&#233;es.</span>
+        </div>
+
+        <div class="bento-tile" style="grid-column:1/-1;justify-content:flex-start;">
+          <div style="display:flex;gap:0;align-items:flex-start;">
+
+            <div style="flex:1;padding-right:1.5rem;">
+              <span class="bento-tile__label" style="margin-bottom:0.8rem;display:block;">Cookies n&#233;cessaires</span>
+              <p class="bento-tile__sub" style="font-size:0.9rem;margin:0;line-height:1.8;">Indispensable au bon fonctionnement du site.<br><span style="font-weight:800;color:#0d1b2a;">PAS</span> de consentement <span style="font-weight:800;color:#0d1b2a;">OBLIGATOIRE</span></p>
+            </div>
+
+            <div style="width:1.5px;background:#0d1b2a;align-self:stretch;flex-shrink:0;"></div>
+
+            <div style="flex:1;padding:0 1.5rem;">
+              <span class="bento-tile__label" style="margin-bottom:0.8rem;display:block;">Cookies analytiques</span>
+              <p class="bento-tile__sub" style="font-size:0.9rem;margin:0;line-height:1.8;">Comprendre la mani&#232;re dont les utilisateurs naviguent sur un site web.<br>Consentement <span style="font-weight:800;color:#0d1b2a;">OBLIGATOIRE</span></p>
+            </div>
+
+            <div style="width:1.5px;background:#0d1b2a;align-self:stretch;flex-shrink:0;"></div>
+
+            <div style="flex:1;padding-left:1.5rem;">
+              <span class="bento-tile__label" style="margin-bottom:0.8rem;display:block;">Cookies publicitaires</span>
+              <p class="bento-tile__sub" style="font-size:0.9rem;margin:0;line-height:1.8;">Suivi de l&#x27;utilisateur pour afficher des publicit&#233;s cibl&#233;es.<br>Consentement <span style="font-weight:800;color:#0d1b2a;">OBLIGATOIRE</span></p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="bento-tile" style="grid-column:1/-1;">
+          <span class="bento-tile__label" style="margin-bottom:0.5rem;">Loi ⚖️</span>
+          <span class="bento-tile__sub" style="font-size:1rem;">L&#x27;apparition de cookies lors d&#x27;une navigation web est encadr&#233;e par des lois fran&#231;aises et europ&#233;ennes qui imposent d&#x27;informer l&#x27;utilisateur et d&#x27;obtenir son consentement.</span>
+          <span class="bento-tile__sub" style="font-size:1rem;margin-top:0.5rem;display:block;">3 lois y r&#233;gissent</span>
+          <p class="bento-tile__sub" style="font-size:0.9rem;margin:0.8rem 0 0;line-height:1.8;"><span style="font-weight:800;color:#0d1b2a;">- Loi fran&#231;aise Informatique et Libert&#233;s : Article 82 de la loi</span><br>Encadre la protection des donn&#233;es personnelles en France. L&#x27;article 82 impose aux sites web d&#x27;informer les utilisateurs et d&#x27;obtenir leur consentement avant de d&#233;poser des cookies, sauf pour ceux qui sont strictement n&#233;cessaires au fonctionnement du site.</p>
+          <p class="bento-tile__sub" style="font-size:0.9rem;margin:0.8rem 0 0;line-height:1.8;"><span style="font-weight:800;color:#0d1b2a;">- Directive Privacy (directive cookie)</span><br>R&#233;glementation europ&#233;enne qui encadre l’utilisation des cookies et des communications &#233;lectroniques. Elle impose aux sites web d’obtenir le consentement pr&#233;alable des utilisateurs avant d’utiliser des cookies non essentiels, notamment les cookies analytiques et publicitaires.</p>
+          <p class="bento-tile__sub" style="font-size:0.9rem;margin:0.8rem 0 0;line-height:1.8;"><span style="font-weight:800;color:#0d1b2a;">- RGPD (R&#232;glement G&#233;n&#233;ral sur la Protection des Donn&#233;es)</span><br>R&#232;glement europ&#233;en visant &#224; prot&#233;ger les donn&#233;es personnelles. L’article 7 pr&#233;cise que le consentement doit &#234;tre libre, &#233;clair&#233;, sp&#233;cifique et univoque. Il garantit que l’utilisateur garde le contr&#244;le sur ses donn&#233;es et peut accepter ou refuser leur utilisation.</p>
+        </div>
+
+      </div>
+
     </section>
   </main>
 

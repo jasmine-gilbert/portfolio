@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
@@ -14,26 +14,26 @@
       <button class="nav-toggle" aria-label="Ouvrir le menu">&#9776;</button>
       <ul class="nav-links">
         <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="bts-sio.html">BTS SIO</a></li>
         <li class="dropdown">
           <a class="dropbtn" href="index.html#apropos">A propos &#9662;</a>
           <ul class="dropdown-menu">
+            <li><a href="mon-cv.html">Mon CV</a></li>
             <li><a href="mon-entreprise.html">Mon entreprise</a></li>
             <li><a href="mon-stage.html">Mon stage</a></li>
-            <li><a href="mon-cv.html">Mon CV</a></li>
           </ul>
         </li>
-        <li><a href="tcs.html">TCS</a></li><li><a href="bts-sio.html">BTS SIO</a></li>
+        <li><a href="tcs.html">TCS</a></li>
         <li class="dropdown">
           <a class="dropbtn" href="#">Projets &#9662;</a>
           <ul class="dropdown-menu">
-            <li><a href="schema.html">Sch&eacute;ma r&eacute;seau</a></li>
-            <li><a href="procedures.html">Proc&eacute;dures</a></li>
-            <li><a href="e5.html">Dossier E5</a></li>
-            <li><a href="e6.html">Dossier E6</a></li>
+            <li><a href="procedures.html">Mes Proc&eacute;dures</a></li>
+            <li><a href="e5.html">Dossier Professionnel E5</a></li>
+            <li><a href="e6.html">Dossier Scolaire E6</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a class="dropbtn" href="#">Veilles &#9662;</a>
+          <a class="dropbtn" href="veilles.html">Veilles &#9662;</a>
           <ul class="dropdown-menu">
             <li><a href="veille-tech.html">Veilles technologiques</a></li>
             <li><a href="veille-jur.html">Veilles juridiques</a></li>
@@ -45,14 +45,99 @@
 
   <canvas id="bg-canvas"></canvas>
   <main>
-    <section class="section">
-      <div style="text-align:center;padding:2rem 1rem 1rem;">
-        <span style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0.8rem;letter-spacing:0.18em;text-transform:uppercase;color:#2a7fc1;opacity:0.8;">Veille Technologique</span>
-        <h1 style="font-size:clamp(3.5rem,10vw,6rem);font-weight:800;letter-spacing:-0.04em;color:#0f172a;margin:0.2rem 0 0.5rem;line-height:1;"><span style="color:#2a7fc1;text-shadow:0 0 24px rgba(42,127,193,0.45);">ZERO</span> TRUST</h1>
-        <p style="font-size:1rem;color:#0f172a;margin:1.5rem auto 0;max-width:650px;line-height:1.7;text-align:left;"><strong>Qu&rsquo;est-ce que Zero Trust&nbsp;?</strong><br>Zero Trust est un mod&egrave;le de s&eacute;curit&eacute; informatique qui consiste &agrave; ne faire confiance &agrave; aucun utilisateur ni appareil par d&eacute;faut. Cela accentue et accepte qu&rsquo;Internet n&rsquo;est pas s&ucirc;r.</p>
-        <p style="font-size:1rem;color:#0f172a;margin:1rem auto 0;max-width:650px;line-height:1.7;text-align:left;">3 principaux piliers sont&nbsp;: <strong>V&eacute;rification de l&rsquo;identit&eacute;</strong>, <strong>l&rsquo;Acc&egrave;s limit&eacute;</strong> et la <strong>Surveillance</strong>.</p>
-        <p style="font-size:1rem;color:#0f172a;margin:1rem auto 0;max-width:650px;line-height:1.7;text-align:left;">Le but est de&nbsp;: <strong>Renforcer la s&eacute;curit&eacute;</strong>, <strong>limiter les d&eacute;g&acirc;ts</strong> et <strong>s&rsquo;adapter aux usages modernes</strong>.</p>
+    <section class="section home-v3">
+
+      <div class="bento-banner">
+        <div class="bento-banner__left">
+          <span class="hero-badge">Veille Technologique</span>
+          <h1 class="bento-title">ZERO<br><span>TRUST</span></h1>
+        </div>
+        <div class="bento-banner__right" style="max-width:380px;">
+          <img src="images/zero trust.jpg" alt="Zero Trust" style="width:380px;max-width:100%;height:auto;border-radius:12px;">
+        </div>
       </div>
+
+      <div style="text-align:center;padding:0 0 0.5rem;margin-top:-0.8rem;">
+        <p style="font-size:1.15rem;font-style:italic;color:#0d1b2a;margin:0 0 0.4rem;line-height:1.7;">&ldquo;Ne jamais faire confiance, toujours v&#233;rifier&rdquo;</p>
+        <span style="font-size:0.8rem;color:#94a3b8;font-weight:600;">&#8212; Analyste John Kindervag, 2010</span>
+      </div>
+
+      <div class="bento-grid" style="grid-auto-rows:auto;">
+
+        <div class="bento-tile" style="grid-column:1/-1;">
+          <span class="bento-tile__label" style="margin-bottom:0.5rem;">D&#233;finition</span>
+          <span class="bento-tile__sub" style="font-size:1rem;">Mod&#232;le strat&#233;gique de cybers&#233;curit&#233; con&#231;u pour prot&#233;ger l&#x27;environnement num&#233;rique de l&#x27;entreprise. Il ne faut faire confiance &#224; personne en prot&#233;geant le r&#233;seau de l&#x27;int&#233;rieur et de l&#x27;ext&#233;rieur.</span>
+          <span class="bento-tile__sub" style="font-size:1rem;margin-top:0.5rem;">Cela change du mod&#232;le cybers&#233;curit&#233; de base qui est de d&#233;fendre le p&#233;rim&#232;tre, emp&#234;cher les attaques d&#x27;entrer sans mesures de s&#233;curit&#233;. Ceci est un ajustement strat&#233;gique de la s&#233;curit&#233; traditionnelle.</span>
+        </div>
+
+        <div class="bento-tile" style="grid-column:1/-1;">
+          <span class="bento-tile__label" style="margin-bottom:0.5rem;">But ?</span>
+          <span class="bento-tile__sub" style="font-size:1rem;">Diminuer les cyberattaques, les attaques venant de l&#x27;int&#233;rieur (salari&#233;s, partage des donn&#233;es, d&#x27;acc&#232;s).</span>
+        </div>
+
+        <div style="grid-column:1/-1;padding:0 0.2rem;">
+          <span class="bento-tile__label" style="margin-bottom:1.4rem;display:block;">&#201;volution Zero Trust</span>
+          <div style="position:relative;padding-left:1.5rem;">
+            <div style="position:absolute;left:6px;top:8px;bottom:8px;width:2px;background:#0d1b2a;"></div>
+
+            <div style="position:relative;margin-bottom:1.6rem;">
+              <div style="position:absolute;left:-1.5rem;top:4px;width:14px;height:14px;border-radius:50%;background:#0d1b2a;border:2px solid #fff;box-shadow:0 0 0 2px #0d1b2a;flex-shrink:0;"></div>
+              <span class="bento-tile__sub" style="font-size:0.75rem;font-weight:800;color:#0d1b2a;letter-spacing:0.05em;">2010</span>
+              <p class="bento-tile__sub" style="font-size:0.9rem;font-weight:700;color:#0d1b2a;margin:0.15rem 0 0.2rem;">Mise en place du mod&#232;le initial</p>
+              <p class="bento-tile__sub" style="font-size:0.82rem;margin:0;line-height:1.5;">S&#233;curisation r&#233;seau — John Kindervag introduit le concept Zero Trust.</p>
+            </div>
+
+            <div style="position:relative;margin-bottom:1.6rem;">
+              <div style="position:absolute;left:-1.5rem;top:4px;width:14px;height:14px;border-radius:50%;background:#0d1b2a;border:2px solid #fff;box-shadow:0 0 0 2px #0d1b2a;flex-shrink:0;"></div>
+              <span class="bento-tile__sub" style="font-size:0.75rem;font-weight:800;color:#0d1b2a;letter-spacing:0.05em;">2019</span>
+              <p class="bento-tile__sub" style="font-size:0.9rem;font-weight:700;color:#0d1b2a;margin:0.15rem 0 0.2rem;">Explosion du cloud &amp; t&#233;l&#233;travail</p>
+              <p class="bento-tile__sub" style="font-size:0.82rem;margin:0;line-height:1.5;">COVID, expansion du cloud et SaaS, augmentation du t&#233;l&#233;travail et des attaques externes.</p>
+            </div>
+
+            <div style="position:relative;margin-bottom:1.6rem;">
+              <div style="position:absolute;left:-1.5rem;top:4px;width:14px;height:14px;border-radius:50%;background:#0d1b2a;border:2px solid #fff;box-shadow:0 0 0 2px #0d1b2a;flex-shrink:0;"></div>
+              <span class="bento-tile__sub" style="font-size:0.75rem;font-weight:800;color:#0d1b2a;letter-spacing:0.05em;">2020 — 2024</span>
+              <p class="bento-tile__sub" style="font-size:0.9rem;font-weight:700;color:#0d1b2a;margin:0.15rem 0 0.2rem;">V&#233;rifications syst&#233;matiques</p>
+              <p class="bento-tile__sub" style="font-size:0.82rem;margin:0;line-height:1.5;">Mise en place des contr&#244;les : utilisateur, appareil, contexte — adoption mondiale du mod&#232;le.</p>
+            </div>
+
+            <div style="position:relative;">
+              <div style="position:absolute;left:-1.5rem;top:4px;width:14px;height:14px;border-radius:50%;background:#0d1b2a;border:2px solid #fff;box-shadow:0 0 0 2px #0d1b2a;flex-shrink:0;"></div>
+              <span class="bento-tile__sub" style="font-size:0.75rem;font-weight:800;color:#0d1b2a;letter-spacing:0.05em;">2024 — 2026</span>
+              <p class="bento-tile__sub" style="font-size:0.9rem;font-weight:700;color:#0d1b2a;margin:0.15rem 0 0.2rem;">Introduction de l&#x27;IA dans la s&#233;curit&#233;</p>
+              <p class="bento-tile__sub" style="font-size:0.82rem;margin:0;line-height:1.5;">L&#x27;intelligence artificielle int&#232;gre les syst&#232;mes Zero Trust pour une d&#233;tection et r&#233;ponse automatis&#233;es.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="bento-tile" style="justify-content:flex-start;">
+          <span style="font-size:2rem;">👤</span>
+          <span class="bento-tile__label" style="margin-bottom:0.5rem;">Utilisateurs</span>
+          <p class="bento-tile__sub" style="font-size:0.9rem;margin:0.4rem 0 0;line-height:1.8;"><span style="font-weight:800;color:#0d1b2a;">QUI</span> se connecte ?</p>
+          <p class="bento-tile__sub" style="font-size:0.9rem;margin:0.4rem 0 0;line-height:1.8;"><span style="font-weight:800;color:#0d1b2a;">MFA</span> : double authentification.<br><span style="font-weight:800;color:#0d1b2a;">IAM</span> : gestion acc&#232;s et droits.<br><span style="font-weight:800;color:#0d1b2a;">SSO</span> : connexion unique.</p>
+        </div>
+
+        <div class="bento-tile" style="justify-content:flex-start;">
+          <span style="font-size:2rem;">💻</span>
+          <span class="bento-tile__label" style="margin-bottom:0.5rem;">Appareils</span>
+          <p class="bento-tile__sub" style="font-size:0.9rem;margin:0.4rem 0 0;line-height:1.8;"><span style="font-weight:800;color:#0d1b2a;">QUOI</span> se connecte ?</p>
+          <p class="bento-tile__sub" style="font-size:0.9rem;margin:0.4rem 0 0;line-height:1.8;">Ordinateurs avec syst&#232;me &#224; jour et s&#233;curis&#233;<br>Anti-virus &#224; jour<br>Mise &#224; jour</p>
+        </div>
+
+        <div class="bento-tile" style="justify-content:flex-start;">
+          <span style="font-size:2rem;">🌍</span>
+          <span class="bento-tile__label" style="margin-bottom:0.5rem;">Contexte et emplacement</span>
+          <p class="bento-tile__sub" style="font-size:0.9rem;margin:0.4rem 0 0;line-height:1.8;"><span style="font-weight:800;color:#0d1b2a;">QUELLES</span> conditions de connexion ?<br>Localisation et comportement utilisateurs :</p>
+          <ul class="bento-tile__sub" style="font-size:0.9rem;margin:0.2rem 0 0;padding-left:1.2rem;line-height:1.8;">
+            <li>Endroit de connexion</li>
+            <li>Type de connexion</li>
+            <li>Appareils</li>
+          </ul>
+        </div>
+
+      </div>
+
     </section>
   </main>
 

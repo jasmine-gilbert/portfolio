@@ -14,27 +14,26 @@
       <button class="nav-toggle" aria-label="Ouvrir le menu">&#9776;</button>
       <ul class="nav-links">
         <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="bts-sio.html">BTS SIO</a></li>
         <li class="dropdown">
           <a class="dropbtn" href="#">A propos &#9662;</a>
           <ul class="dropdown-menu">
+            <li><a href="mon-cv.html">Mon CV</a></li>
             <li><a href="mon-entreprise.html">Mon entreprise</a></li>
             <li><a href="mon-stage.html">Mon stage</a></li>
-            <li><a href="mon-cv.html">Mon CV</a></li>
           </ul>
         </li>
         <li><a href="tcs.html">TCS</a></li>
-        <li><a href="bts-sio.html">BTS SIO</a></li>
         <li class="dropdown">
           <a class="dropbtn" href="#">Projets &#9662;</a>
           <ul class="dropdown-menu">
-            <li><a href="schema.html">Sch&eacute;ma r&eacute;seau</a></li>
-            <li><a href="procedures.html">Proc&eacute;dures</a></li>
-            <li><a href="e5.html">Dossier E5</a></li>
-            <li><a href="e6.html">Dossier E6</a></li>
+            <li><a href="procedures.html">Mes Proc&eacute;dures</a></li>
+            <li><a href="e5.html">Dossier Professionnel E5</a></li>
+            <li><a href="e6.html">Dossier Scolaire E6</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a class="dropbtn" href="#">Veilles &#9662;</a>
+          <a class="dropbtn" href="veilles.html">Veilles &#9662;</a>
           <ul class="dropdown-menu">
             <li><a href="veille-tech.html">Veilles technologiques</a></li>
             <li><a href="veille-jur.html">Veilles juridiques</a></li>
@@ -53,17 +52,16 @@
       </div>
 
       <div class="tcs-grid">
-        <div class="tcs-card" onclick="openPdf('images/tcs%20GG.pdf')">
-          <div class="tcs-card-left">
-            <div class="tcs-pdf-badge">PDF</div>
+        <a href="images/tcs GG.pdf" target="_blank" class="tcs-dl-card" style="text-decoration:none;">
+          <div class="tcs-dl-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
           </div>
-          <div class="tcs-card-body">
-            <span class="tcs-card-title">TCS GG</span>
-            <span class="tcs-card-sub">Tableau de Compétences &mdash; cliquer pour visualiser</span>
-          </div>
-          <div class="tcs-card-cta">Ouvrir &#8599;</div>
-        </div>
+          <span class="tcs-dl-title">TCS</span>
+          <span class="tcs-dl-sub">Tableau de Comp&eacute;tences &mdash; PDF</span>
+          <span class="tcs-dl-btn">Ouvrir &#8599;</span>
+        </a>
       </div>
+
     </section>
   </main>
 
@@ -96,3 +94,4 @@
   <footer class="site-footer"><p>&copy; 2026 - Portfolio BTS SIO</p></footer>
 </body>
 </html>
+

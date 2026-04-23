@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
@@ -18,22 +18,22 @@
       <button class="nav-toggle" aria-label="Ouvrir le menu">&#9776;</button>
       <ul class="nav-links">
         <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="bts-sio.html">BTS SIO</a></li>
         <li class="dropdown">
           <a class="dropbtn" href="index.html#apropos">A propos &#9662;</a>
           <ul class="dropdown-menu">
+            <li><a href="mon-cv.html">Mon CV</a></li>
             <li><a href="mon-entreprise.html">Mon entreprise</a></li>
             <li><a href="mon-stage.html">Mon stage</a></li>
-            <li><a href="mon-cv.html">Mon CV</a></li>
           </ul>
         </li>
-        <li><a href="tcs.html">TCS</a></li><li><a href="bts-sio.html">BTS SIO</a></li>
+        <li><a href="tcs.html">TCS</a></li>
         <li class="dropdown">
           <a class="dropbtn" href="index.html#projets">Projets &#9662;</a>
           <ul class="dropdown-menu">
-            <li><a href="schema.html">Sch&eacute;ma r&eacute;seau</a></li>
-            <li><a href="procedures.html">Proc&eacute;dures</a></li>
-            <li><a href="e5.html">Dossier E5</a></li>
-            <li><a href="e6.html">Dossier E6</a></li>
+            <li><a href="procedures.html">Mes Proc&eacute;dures</a></li>
+            <li><a href="e5.html">Dossier Professionnel E5</a></li>
+            <li><a href="e6.html">Dossier Scolaire E6</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -47,17 +47,18 @@
     </nav>
   </header>
 
-  <main class="stage-main">
+  <main class="ent-main">
 
     <!-- HERO -->
-    <section class="stage-hero">
-      <span class="stage-tag">Stage BTS SIO &mdash; 2025</span>
-      <h1 class="stage-title"><span>NET</span>BFRS</h1>
-      <p class="stage-subtitle">Mon entreprise de stage &mdash; Marseille, Bouches-du-Rh&ocirc;ne</p>
+    <section class="ent-hero">
+      <div class="ent-hero-card">
+        <h1 class="ent-name">NETBFRS</h1>
+        <p class="ent-sector">Stage BTS SIO &mdash; Marseille, Bouches-du-Rh&ocirc;ne</p>
+      </div>
     </section>
 
     <!-- STATS -->
-    <section class="ent-stats-row" style="margin: 2rem 0;">
+    <section class="ent-stats-row">
       <div class="stat-card stat-card--blue">
         <p class="stat-label">Dur&eacute;e</p>
         <p class="stat-number">5</p>
@@ -75,74 +76,74 @@
       </div>
     </section>
 
-    <!-- PRESENTATION -->
-    <section class="stage-section">
-      <p class="stage-section-label">&#128196; Pr&eacute;sentation</p>
-      <h2 class="stage-section-title">L'entreprise</h2>
-      <p class="stage-section-body">
-        NETBFRS est mon entreprise de stage. Pr&eacute;sentez ici une description de l'entreprise&nbsp;: son secteur d'activit&eacute;, sa taille, ses missions principales et le contexte dans lequel vous avez effectu&eacute; votre stage.
-      </p>
-    </section>
+    <div class="ent-big-card">
 
-    <!-- MISSIONS -->
-    <section class="stage-section" style="background:linear-gradient(135deg,#eaf4fd 0%,#f0f8ff 60%,#e8f0fb 100%);border-radius:18px;padding:2rem;">
-      <p class="stage-section-label">&#127919; Missions</p>
-      <h2 class="stage-section-title">Mes t&acirc;ches et r&eacute;alisations</h2>
+      <!-- PRESENTATION -->
+      <section class="ent-section-card">
+        <h2 class="section-title">Pr&eacute;sentation</h2>
+        <img src="images/netbfrs.png" alt="NETBFRS" style="float:right;width:130px;border-radius:10px;margin:0 0 1rem 1.5rem;">
+        <p class="section-body">
+          NETBFRS est une entreprise sp&eacute;cialis&eacute;e dans l&rsquo;installation et la maintenance de r&eacute;seaux informatiques, de syst&egrave;mes de vid&eacute;osurveillance et d&rsquo;infrastructures audio-visuelles.
+        </p>
+      </section>
 
-      <div style="display:flex;flex-direction:column;gap:0;margin-top:1.2rem;border:2px solid rgba(42,127,193,0.25);border-radius:16px;overflow:hidden;">
+      <!-- MISSIONS -->
+      <section class="ent-section-card">
+        <h2 class="section-title">Mes T&acirc;ches et R&eacute;alisations</h2>
+        <ul class="mission-list">
+          <li class="mission-item">
+            <span class="mission-num">01</span>
+            <div class="mission-text">
+              <strong>Mise en place d&rsquo;une infrastructure Wi-Fi</strong>
+              <span>D&eacute;ploiement d&rsquo;un r&eacute;seau sans fil performant</span>
+            </div>
+          </li>
+          <li class="mission-item">
+            <span class="mission-num">02</span>
+            <div class="mission-text">
+              <strong>Syst&egrave;me de diffusion sonore centralis&eacute;</strong>
+              <span>Int&eacute;gration et configuration de la solution audio</span>
+            </div>
+          </li>
+          <li class="mission-item">
+            <span class="mission-num">03</span>
+            <div class="mission-text">
+              <strong>Remplacement et configuration de NAS</strong>
+              <span>Installation et param&eacute;trage du stockage r&eacute;seau</span>
+            </div>
+          </li>
+          <li class="mission-item">
+            <span class="mission-num">04</span>
+            <div class="mission-text">
+              <strong>Maintenance de cam&eacute;ras de vid&eacute;osurveillance</strong>
+              <span>R&eacute;paration et remise en service du syst&egrave;me CCTV</span>
+            </div>
+          </li>
+          <li class="mission-item">
+            <span class="mission-num">05</span>
+            <div class="mission-text">
+              <strong>D&eacute;pannage d&rsquo;ordinateurs</strong>
+              <span>Diagnostic et r&eacute;solution de pannes mat&eacute;rielles et logicielles</span>
+            </div>
+          </li>
+          <li class="mission-item">
+            <span class="mission-num">06</span>
+            <div class="mission-text">
+              <strong>C&acirc;blage r&eacute;seau Ethernet</strong>
+              <span>Tirage et installation de c&acirc;bles pour la vid&eacute;osurveillance</span>
+            </div>
+          </li>
+          <li class="mission-item">
+            <span class="mission-num">07</span>
+            <div class="mission-text">
+              <strong>Diagnostic de postes informatiques</strong>
+              <span>D&eacute;pannage et remise en &eacute;tat des postes utilisateurs</span>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-        <div style="display:flex;align-items:center;gap:1.2rem;padding:1rem 1.4rem;background:#fff;border-bottom:1px solid rgba(42,127,193,0.12);">
-          <div style="width:36px;height:36px;border-radius:50%;background:#2a7fc1;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 0 10px rgba(42,127,193,0.4);">
-            <span style="color:#fff;font-size:0.75rem;font-weight:800;">01</span>
-          </div>
-          <div>
-            <strong style="color:#0f172a;font-size:0.95rem;display:block;">Mission 1</strong>
-            <span style="color:#64748b;font-size:0.82rem;">Description de la mission</span>
-          </div>
-        </div>
-
-        <div style="display:flex;align-items:center;gap:1.2rem;padding:1rem 1.4rem;background:#f8fbff;border-bottom:1px solid rgba(42,127,193,0.12);">
-          <div style="width:36px;height:36px;border-radius:50%;background:#2a7fc1;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 0 10px rgba(42,127,193,0.4);">
-            <span style="color:#fff;font-size:0.75rem;font-weight:800;">02</span>
-          </div>
-          <div>
-            <strong style="color:#0f172a;font-size:0.95rem;display:block;">Mission 2</strong>
-            <span style="color:#64748b;font-size:0.82rem;">Description de la mission</span>
-          </div>
-        </div>
-
-        <div style="display:flex;align-items:center;gap:1.2rem;padding:1rem 1.4rem;background:#fff;border-bottom:1px solid rgba(42,127,193,0.12);">
-          <div style="width:36px;height:36px;border-radius:50%;background:#2a7fc1;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 0 10px rgba(42,127,193,0.4);">
-            <span style="color:#fff;font-size:0.75rem;font-weight:800;">03</span>
-          </div>
-          <div>
-            <strong style="color:#0f172a;font-size:0.95rem;display:block;">Mission 3</strong>
-            <span style="color:#64748b;font-size:0.82rem;">Description de la mission</span>
-          </div>
-        </div>
-
-        <div style="display:flex;align-items:center;gap:1.2rem;padding:1rem 1.4rem;background:#f8fbff;border-bottom:1px solid rgba(42,127,193,0.12);">
-          <div style="width:36px;height:36px;border-radius:50%;background:#2a7fc1;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 0 10px rgba(42,127,193,0.4);">
-            <span style="color:#fff;font-size:0.75rem;font-weight:800;">04</span>
-          </div>
-          <div>
-            <strong style="color:#0f172a;font-size:0.95rem;display:block;">Mission 4</strong>
-            <span style="color:#64748b;font-size:0.82rem;">Description de la mission</span>
-          </div>
-        </div>
-
-        <div style="display:flex;align-items:center;gap:1.2rem;padding:1rem 1.4rem;background:#fff;">
-          <div style="width:36px;height:36px;border-radius:50%;background:#2a7fc1;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 0 10px rgba(42,127,193,0.4);">
-            <span style="color:#fff;font-size:0.75rem;font-weight:800;">05</span>
-          </div>
-          <div>
-            <strong style="color:#0f172a;font-size:0.95rem;display:block;">Mission 5</strong>
-            <span style="color:#64748b;font-size:0.82rem;">Description de la mission</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
+    </div>
 
   </main>
 

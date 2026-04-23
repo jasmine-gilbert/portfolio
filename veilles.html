@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dossier Scolaire E6 - Portfolio</title>
+  <title>Veilles - Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -36,7 +36,7 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a class="dropbtn" href="index.html#veilles">Veilles &#9662;</a>
+          <a class="dropbtn" href="veilles.html">Veilles &#9662;</a>
           <ul class="dropdown-menu">
             <li><a href="veille-tech.html">Veilles technologiques</a></li>
             <li><a href="veille-jur.html">Veilles juridiques</a></li>
@@ -49,43 +49,39 @@
   <main>
     <section class="section home-v3">
 
-      <!-- Banner -->
       <div class="bento-banner">
         <div class="bento-banner__left">
           <span class="hero-badge">BTS SIO &mdash; SISR</span>
-          <h1 class="bento-title"><span>MAISON AURA</span></h1>
-          <p class="bento-banner__desc">Dans le cadre de ma formation, l'entreprise fictive Maison Aura a été créée afin de mettre en application les réalisations précédentes. Ce projet s'inscrit dans une démarche de simulation d'un environnement technologique réaliste, avec pour objectif principal la mise en place de solutions de sécurisation et de segmentation réseau.</p>
+          <h1 class="bento-title">MES<br><span>VEILLES</span></h1>
         </div>
         <div class="bento-banner__right">
-          <img src="images/maison aura.png" alt="Logo Maison Aura" style="max-width:160px;max-height:120px;object-fit:contain;border-radius:12px;margin-top:-30px;">
+          <span class="bento-banner__tag">Technologique</span>
+          <span class="bento-banner__tag">Juridique</span>
         </div>
       </div>
 
-      <!-- Bento grid -->
       <div class="bento-grid" style="grid-auto-rows:auto;">
 
         <div class="bento-tile" style="grid-column:1/-1;">
-          <span class="bento-tile__sub">Dans le cadre de mon projet, mes réalisations ont été effectuées depuis mon plot S3P2 attitré au sein de l'IFC Marseille et encadré par notre formateur Bernard FERNANDEZ.</span>
+          <span class="bento-tile__label" style="color:#0d1b2a;font-weight:800;">Qu'est ce qu'une veille ?</span>
+          <span class="bento-tile__sub" style="font-size:1.05rem;">Une veille est la surveillance, la collecte et l'analyse d'un sujet afin de rester informé et à jour de son évolution.</span>
+          <span class="bento-tile__sub" style="font-weight:800;color:#0d1b2a;font-size:1.05rem;margin-top:0.5rem;">But ?</span>
+          <span class="bento-tile__sub" style="font-size:1.05rem;">Se tenir à jour avec les technologies, les lois, la concurrence.</span>
+          <span class="bento-tile__sub" style="font-size:1.05rem;font-weight:800;color:#0d1b2a;margin-top:0.5rem;">Objectifs</span>
+          <span class="bento-tile__sub" style="font-size:1.05rem;">Améliorer les systèmes existants, suivre les nouvelles technologies, éviter l'obsolescence en entreprise.</span>
         </div>
 
-
-
-        <div class="bento-tile" style="grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;">
-          <div>
-            <div class="bento-tile__label" style="margin-bottom:0.4rem;">DOSSIER E6 MAISON AURA</div>
-          </div>
-          <a href="images/dossier E6 finis .pdf" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:0.5rem;text-decoration:none;transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.07)'" onmouseout="this.style.transform='scale(1)'">
-            <img src="images/maison aura.png" alt="Maison Aura – Ouvrir le dossier E6" style="width:90px;height:90px;object-fit:contain;border-radius:16px;box-shadow:0 4px 16px rgba(0,0,0,0.12);">
-            <span style="font-size:0.75rem;color:#64748b;font-weight:600;">Ouvrir le PDF</span>
-          </a>
-        </div>
         <div style="grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
-          <div class="bento-tile">
-            <span class="bento-tile__label">Réalisation 1</span>
-          </div>
-          <div class="bento-tile">
-            <span class="bento-tile__label">Réalisation 2</span>
-          </div>
+          <a href="veille-tech.html" class="bento-tile" style="text-decoration:none;">
+            <span class="bento-tile__label">Veille technologique</span>
+            <span class="bento-tile__sub" style="font-size:1.05rem;">Surveiller l'évolution technique du domaine informatique afin de rester à jour et un acteur compétitif.</span>
+            <img src="images/photo v techno.jpg" alt="Veille technologique" style="width:100%;height:auto;border-radius:8px;margin-top:0.8rem;">
+          </a>
+          <a href="veille-jur.html" class="bento-tile" style="text-decoration:none;justify-content:flex-start;">
+            <span class="bento-tile__label">Veille Juridique</span>
+            <span class="bento-tile__sub" style="font-size:1.05rem;">Rester conforme à la loi en suivant les évolutions et règlementations afin de garantir que l'organisation évite les risques juridiques, sécuriser les activités de l'entreprise et anticiper les évolutions.</span>
+            <img src="images/veille juri.jpg" alt="Veille juridique" style="width:100%;height:auto;border-radius:8px;margin-top:0.8rem;">
+          </a>
         </div>
 
       </div>
