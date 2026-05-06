@@ -8,9 +8,48 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Raleway:wght@400;600;700;800&family=Space+Grotesk:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .bento-grid {
+      gap: 0.5rem !important;
+      margin-top: 1.1rem !important;
+    }
+    .bento-tile {
+      background: linear-gradient(135deg, #f6f7fa 0%, #e3e6eb 100%) !important;
+      border-radius: 18px !important;
+      box-shadow: 0 2px 16px rgba(30,41,59,0.07) !important;
+      margin-bottom: 2.2rem !important;
+      padding: 1.2rem 1.2rem 1rem 1.2rem !important;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      border: 1.5px solid #e0e7ef !important;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .bento-tile__label {
+      font-size: 1.18rem !important;
+      margin-bottom: 0.7rem !important;
+      color: #444 !important;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase !important;
+    }
+    .bento-tile__sub {
+      color: #222 !important;
+      font-size: 1.05rem !important;
+      line-height: 1.7 !important;
+    }
+    @media (max-width: 800px) {
+      .bento-tile {
+        padding: 1.2rem 0.7rem 1.2rem 0.7rem !important;
+      }
+      .bento-grid {
+        gap: 1.2rem !important;
+      }
+    }
+  </style>
   <script defer src="js/main.js"></script>
 </head>
-<body>
+<body style="background: #eaf6ff;">
   <header>
     <nav class="navbar">
       <div class="brand">Jasmine Gilbert</div>
@@ -22,11 +61,10 @@
           <a class="dropbtn" href="#">A propos &#9662;</a>
           <ul class="dropdown-menu">
             <li><a href="mon-cv.html">Mon CV</a></li>
-            <li><a href="mon-entreprise.html">Mon entreprise</a></li>
             <li><a href="mon-stage.html">Mon stage</a></li>
+            <li><a href="mon-entreprise.html">Mon entreprise</a></li>
           </ul>
         </li>
-        <li><a href="tcs.html">TCS</a></li>
         <li class="dropdown">
           <a class="dropbtn" href="#">Projets &#9662;</a>
           <ul class="dropdown-menu">
@@ -42,6 +80,7 @@
             <li><a href="veille-jur.html">Veilles juridiques</a></li>
           </ul>
         </li>
+        <li><a href="tcs.html">TCS</a></li>
       </ul>
     </nav>
   </header>
@@ -68,7 +107,7 @@
       <!-- Bento grid -->
       <div class="bento-grid">
 
-        <!-- Formation — large -->
+        <!-- Formation ï¿½ large -->
         <div class="bento-tile bento-tile--span2" style="justify-content:center;align-items:center;text-align:center;">
           <span class="bento-tile__label">Formation</span>
           <span class="bento-tile__sub">BTS SIO SISR &mdash; IFC Marseille &mdash; 2024&ndash;2026</span>
@@ -76,15 +115,14 @@
 
         <!-- Alternance -->
         <div class="bento-tile" style="flex-direction:row;align-items:center;justify-content:space-between;">
-          <div style="display:flex;flex-direction:column;gap:0.1rem;">
-            <span class="bento-tile__label">Alternance</span>
-            <span class="bento-tile__sub">Sauvegarde 13</span>
-            <span class="bento-tile__sub">D&eacute;c 2025 &rarr; aujourd&rsquo;hui</span>
+          <div style="display:flex;flex-direction:column;gap:0.4rem;white-space:normal;word-break:break-word;max-width:60%;">
+            <span class="bento-tile__sub" style="font-size:1.08rem;color:#0d1b2a;font-weight:600;">Sauvegarde 13</span>
+            <span class="bento-tile__sub" style="font-size:1.01rem;color:#444;">DÃ©cembre 2025</span>
           </div>
           <img src="images/sauvegarde ok.jpeg" alt="Sauvegarde 13" style="width:auto;max-width:110px;max-height:75px;object-fit:contain;border-radius:6px;flex-shrink:0;">
         </div>
 
-        <!-- Expériences — timeline -->
+        <!-- Expï¿½riences ï¿½ timeline -->
         <div class="bento-ghost bento-tile--span2 bento-tile--group">
           <span class="bento-tile__label">EXP&Eacute;RIENCES</span>
           <div class="cv-timeline">
@@ -120,9 +158,9 @@
           </div>
         </div>
 
-        <!-- Diplôme -->
-        <div class="bento-tile" style="justify-content:center;align-items:center;text-align:center;">
-          <span class="bento-tile__label">Dipl&ocirc;me obtenu</span>
+        <!-- Diplï¿½me -->
+        <div class="bento-tile" style="justify-content:center;align-items:center;text-align:center;gap:0.3rem;">
+          <span class="bento-tile__label" style="margin-bottom:0.2rem !important;">Dipl&ocirc;me obtenu</span>
           <span class="bento-tile__sub">Baccalaur&eacute;at &Eacute;conomique et Social</span>
         </div>
 

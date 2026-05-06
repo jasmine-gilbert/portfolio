@@ -4,31 +4,87 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio BTS SIO - SISR</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Raleway:wght@400;600;700;800&family=Space+Grotesk:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <script defer src="js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Raleway:wght@400;600;700;800&family=Space+Grotesk:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Champs de formulaire contact transparents comme la case */
+        .contact-box input,
+        .contact-box textarea {
+          background: #fff !important;
+          border: 1.5px solid #e0e7ef !important;
+          border-radius: 8px !important;
+          box-shadow: none !important;
+          color: #222 !important;
+          font-size: 1rem;
+          padding: 0.7rem 1rem;
+          margin-bottom: 0.7rem;
+          transition: border-color 0.2s;
+        }
+        .contact-box input:focus,
+        .contact-box textarea:focus {
+          border-color: #b6c6d8 !important;
+          outline: none;
+        }
+      .bento-grid {
+        gap: 0.5rem !important;
+        margin-top: 1.1rem !important;
+      }
+      .bento-tile {
+        background: linear-gradient(135deg, #f6f7fa 0%, #e3e6eb 100%) !important;
+        border-radius: 18px !important;
+        box-shadow: 0 2px 16px rgba(30,41,59,0.07) !important;
+        margin-bottom: 2.2rem !important;
+        padding: 1.2rem 1.2rem 1rem 1.2rem !important;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        border: 1.5px solid #e0e7ef !important;
+        transition: box-shadow 0.2s, border-color 0.2s;
+      }
+      .bento-tile__label {
+        font-size: 1.18rem !important;
+        margin-bottom: 0.7rem !important;
+        color: #444 !important;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        text-transform: uppercase !important;
+      }
+      .bento-tile__sub {
+        color: #222 !important;
+        font-size: 1.05rem !important;
+        line-height: 1.7 !important;
+      }
+      @media (max-width: 800px) {
+        .bento-tile {
+          padding: 1.2rem 0.7rem 1.2rem 0.7rem !important;
+        }
+        .bento-grid {
+          gap: 1.2rem !important;
+        }
+      }
+    </style>
+    <script defer src="js/main.js"></script>
 </head>
-<body>
+<body style="background: #eaf6ff;">
   <header>
     <nav class="navbar">
       <div class="brand">Jasmine Gilbert</div>
       <button class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
       <ul class="nav-links">
-        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="index.html#accueil">Accueil</a></li>
         <li><a href="bts-sio.html">BTS SIO</a></li>
         <li class="dropdown">
-          <a class="dropbtn" href="#apropos">À propos</a>
+          <a class="dropbtn" href="index.html#apropos">A propos &#9662;</a>
           <ul class="dropdown-menu">
             <li><a href="mon-cv.html">Mon CV</a></li>
-            <li><a href="mon-entreprise.html">Mon entreprise</a></li>
             <li><a href="mon-stage.html">Mon stage</a></li>
+            <li><a href="mon-entreprise.html">Mon entreprise</a></li>
           </ul>
         </li>
-        <li><a href="tcs.html">TCS</a></li>
         <li class="dropdown">
-          <a class="dropbtn" href="#projets">Projets</a>
+          <a class="dropbtn" href="index.html#projets">Projets &#9662;</a>
           <ul class="dropdown-menu">
             <li><a href="procedures.html">Mes Proc&eacute;dures</a></li>
             <li><a href="e5.html">Dossier Professionnel E5</a></li>
@@ -42,6 +98,7 @@
             <li><a href="veille-jur.html">Veilles juridiques</a></li>
           </ul>
         </li>
+        <li><a href="tcs.html">TCS</a></li>
       </ul>
     </nav>
   </header>
@@ -135,7 +192,7 @@
     </section>
 
     <section id="contact" class="section">
-      <div class="contact-box">
+      <div class="contact-box" style="background: linear-gradient(135deg, #f6f7fa 0%, #e3e6eb 100%) !important; border-radius: 18px !important; box-shadow: 0 2px 16px rgba(30,41,59,0.07) !important; border: 1.5px solid #e0e7ef !important;">
         <h2 class="contact-box__title">Plus de questions&nbsp;? Contactez nous&nbsp;!</h2>
         <form id="contact-form" novalidate>
           <label class="form-row">Prénom

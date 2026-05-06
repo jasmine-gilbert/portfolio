@@ -8,9 +8,48 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .bento-grid {
+      gap: 0.5rem !important;
+      margin-top: 1.1rem !important;
+    }
+    .bento-tile {
+      background: linear-gradient(135deg, #f6f7fa 0%, #e3e6eb 100%) !important;
+      border-radius: 18px !important;
+      box-shadow: 0 2px 16px rgba(30,41,59,0.07) !important;
+      margin-bottom: 2.2rem !important;
+      padding: 1.2rem 1.2rem 1rem 1.2rem !important;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      border: 1.5px solid #e0e7ef !important;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .bento-tile__label {
+      font-size: 1.18rem !important;
+      margin-bottom: 0.7rem !important;
+      color: #444 !important;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase !important;
+    }
+    .bento-tile__sub {
+      color: #222 !important;
+      font-size: 1.05rem !important;
+      line-height: 1.7 !important;
+    }
+    @media (max-width: 800px) {
+      .bento-tile {
+        padding: 1.2rem 0.7rem 1.2rem 0.7rem !important;
+      }
+      .bento-grid {
+        gap: 1.2rem !important;
+      }
+    }
+  </style>
   <script defer src="js/main.js"></script>
 </head>
-<body>
+<body style="background: #eaf6ff;">
   <header>
     <nav class="navbar">
       <div class="brand">Jasmine Gilbert</div>
@@ -22,11 +61,10 @@
           <a class="dropbtn" href="index.html#apropos">A propos &#9662;</a>
           <ul class="dropdown-menu">
             <li><a href="mon-cv.html">Mon CV</a></li>
-            <li><a href="mon-entreprise.html">Mon entreprise</a></li>
             <li><a href="mon-stage.html">Mon stage</a></li>
+            <li><a href="mon-entreprise.html">Mon entreprise</a></li>
           </ul>
         </li>
-        <li><a href="tcs.html">TCS</a></li>
         <li class="dropdown">
           <a class="dropbtn" href="#">Projets &#9662;</a>
           <ul class="dropdown-menu">
@@ -42,6 +80,7 @@
             <li><a href="veille-jur.html">Veilles juridiques</a></li>
           </ul>
         </li>
+        <li><a href="tcs.html">TCS</a></li>
       </ul>
     </nav>
   </header>
@@ -57,27 +96,34 @@
           <p class="bento-banner__desc">Projets réalisés durant les expériences professionnelles</p>
         </div>
         <div class="bento-banner__right">
-          <span class="bento-banner__tag">NETBFRS</span>
-          <span class="bento-banner__tag">Wi-Fi</span>
-          <span class="bento-banner__tag">SONOS</span>
-          <span class="bento-banner__tag">FOG</span>
-          <span class="bento-banner__tag">Sauvegarde13</span>
+           <span class="bento-banner__tag">Sauvegarde13</span>
+           <span class="bento-banner__tag">NETBFRS</span>
+           <span class="bento-banner__tag">Wi-Fi</span>
+           <span class="bento-banner__tag">SONOS</span>
+           <span class="bento-banner__tag">FOG</span>
         </div>
       </div>
 
       <!-- Bento grid -->
       <div class="bento-grid" style="grid-auto-rows:auto;">
-
-        <div style="grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
-          <div class="bento-tile">
+        <div style="grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;align-items:start;">
+          <div class="bento-tile" style="min-height:120px;display:flex;flex-direction:column;justify-content:center;">
             <span class="bento-tile__label">NETBFRS</span>
             <span class="bento-tile__sub"><strong style="color:#0d1b2a;">MODERNISATION</strong> et <strong style="color:#0d1b2a;">OPTIMISATION</strong> d’un réseau Wi-Fi domestique</span>
             <span class="bento-tile__sub"><strong style="color:#0d1b2a;">RECONFIGURATION</strong> d’un système audio multiroom SONOS</span>
           </div>
-          <div class="bento-tile">
+          <div class="bento-tile" style="min-height:120px;display:flex;flex-direction:column;justify-content:center;">
             <span class="bento-tile__label">Sauvegarde13</span>
             <span class="bento-tile__sub"><strong style="color:#0d1b2a;">DÉPLOIEMENT</strong> et <strong style="color:#0d1b2a;">GESTION</strong> des postes clients via le serveur <strong style="color:#0d1b2a;">FOG</strong></span>
           </div>
+        </div>
+        <!-- Nouvelle case explicative sous le carrousel -->
+        <div class="bento-tile" style="grid-column:1/-1;margin-top:1.2rem;">
+          <div style="margin-bottom:0.7rem;"><strong style="color:#0d1b2a;">NETBFRS</strong></div>
+          <div style="margin-bottom:0.7rem;">Installation de point d'accès WI-FI Unifi pour améliorer la couverture réseau et le débit.</div>
+          <div style="margin-bottom:0.7rem;">Intégration d'amplificateur SONOS au réseau et diffusion de la musique dans l'ensemble de la maison.</div>
+          <div style="margin-bottom:0.7rem;"><strong style="color:#0d1b2a;">Sauvegarde13</strong></div>
+          <div>Automatiser l'enrollement des postes utilisateurs avec FOG Project</div>
         </div>
         <div style="grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
           <div class="bento-tile e5-carousel-wrap" style="padding:0;overflow:hidden;position:relative;min-height:300px;">

@@ -1,13 +1,53 @@
-﻿<!doctype html>
+﻿    </section>
+<!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Veille Technologique - Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .bento-grid {
+      gap: 0.5rem !important;
+      margin-top: 1.1rem !important;
+    }
+    .bento-tile {
+      background: linear-gradient(135deg, #f6f7fa 0%, #e3e6eb 100%) !important;
+      border-radius: 18px !important;
+      box-shadow: 0 2px 16px rgba(30,41,59,0.07) !important;
+      margin-bottom: 2.2rem !important;
+      padding: 1.2rem 1.2rem 1rem 1.2rem !important;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      border: 1.5px solid #e0e7ef !important;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .bento-tile__label {
+      font-size: 1.18rem !important;
+      margin-bottom: 0.7rem !important;
+      color: #444 !important;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase !important;
+    }
+    .bento-tile__sub {
+      color: #222 !important;
+      font-size: 1.05rem !important;
+      line-height: 1.7 !important;
+    }
+    @media (max-width: 800px) {
+      .bento-tile {
+        padding: 1.2rem 0.7rem 1.2rem 0.7rem !important;
+      }
+      .bento-grid {
+        gap: 1.2rem !important;
+      }
+    }
+  </style>
   <script defer src="js/main.js"></script>
 </head>
-<body>
+<body style="background: #eaf6ff;">
   <header>
     <nav class="navbar">
       <div class="brand">Jasmine Gilbert</div>
@@ -19,11 +59,10 @@
           <a class="dropbtn" href="index.html#apropos">A propos &#9662;</a>
           <ul class="dropdown-menu">
             <li><a href="mon-cv.html">Mon CV</a></li>
-            <li><a href="mon-entreprise.html">Mon entreprise</a></li>
             <li><a href="mon-stage.html">Mon stage</a></li>
+            <li><a href="mon-entreprise.html">Mon entreprise</a></li>
           </ul>
         </li>
-        <li><a href="tcs.html">TCS</a></li>
         <li class="dropdown">
           <a class="dropbtn" href="#">Projets &#9662;</a>
           <ul class="dropdown-menu">
@@ -39,6 +78,7 @@
             <li><a href="veille-jur.html">Veilles juridiques</a></li>
           </ul>
         </li>
+          <li><a href="tcs.html">TCS</a></li>
       </ul>
     </nav>
   </header>
@@ -134,6 +174,24 @@
             <li>Type de connexion</li>
             <li>Appareils</li>
           </ul>
+        </div>
+
+        <!-- Images VPN, MAJ, MFA -->
+        <div style="grid-column:1/-1;display:flex;justify-content:center;gap:2.5rem;margin:2.2rem 0 1.2rem 0;flex-wrap:wrap;">
+          <img src="images/vpn.png" alt="VPN" style="width:230px;max-width:100%;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,0.13);">
+          <img src="images/MAJ.png" alt="Mise à jour" style="width:270px;max-width:100%;border-radius:18px;box-shadow:0 4px 18px rgba(0,0,0,0.13);">
+          <img src="images/DA.png" alt="DA" style="width:270px;max-width:100%;border-radius:18px;box-shadow:0 4px 18px rgba(0,0,0,0.13);">
+        </div>
+
+        <!-- Case SOURCES sous les images -->
+        <div style="grid-column:1/-1;max-width:700px;margin:2.2rem auto 1.5rem auto;padding:1.3rem 1.2rem;background:#fff;border:1px solid #e2e8f0;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.07);text-align:left;">
+          <div style="font-weight:800;font-size:1.1rem;letter-spacing:0.04em;color:#0d1b2a;margin-bottom:1rem;text-transform:uppercase;">SOURCES</div>
+          <div style="display:flex;flex-direction:row;gap:1.5rem;justify-content:center;align-items:center;flex-wrap:wrap;">
+            <img src="images/cyberse.png" alt="Cyberse" style="width:120px;max-width:100%;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.10);">
+            <img src="images/fortinet.png" alt="Fortinet" style="width:120px;max-width:100%;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.10);">
+            <img src="images/microsoft.png" alt="Microsoft" style="width:120px;max-width:100%;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.10);">
+            <img src="images/anssi.png" alt="ANSSI" style="width:120px;max-width:100%;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.10);">
+          </div>
         </div>
 
       </div>

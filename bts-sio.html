@@ -1,4 +1,4 @@
-﻿<!doctype html>
+﻿: "<!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
@@ -8,10 +8,49 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Raleway:wght@400;600;700;800&family=Space+Grotesk:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .bento-grid {
+      gap: 0.5rem !important;
+      margin-top: 1.1rem !important;
+    }
+    .bento-tile {
+      background: linear-gradient(135deg, #f6f7fa 0%, #e3e6eb 100%) !important;
+      border-radius: 18px !important;
+      box-shadow: 0 2px 16px rgba(30,41,59,0.07) !important;
+      margin-bottom: 2.2rem !important;
+      padding: 1.2rem 1.2rem 1rem 1.2rem !important;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      border: 1.5px solid #e0e7ef !important;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .bento-tile__label {
+      font-size: 1.18rem !important;
+      margin-bottom: 0.7rem !important;
+      color: #444 !important;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase !important;
+    }
+    .bento-tile__sub {
+      color: #222 !important;
+      font-size: 1.05rem !important;
+      line-height: 1.7 !important;
+    }
+    @media (max-width: 800px) {
+      .bento-tile {
+        padding: 1.2rem 0.7rem 1.2rem 0.7rem !important;
+      }
+      .bento-grid {
+        gap: 1.2rem !important;
+      }
+    }
+  </style>
   <script defer src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body>
+<body style="background: #eaf6ff;">
   <header>
     <nav class="navbar">
       <div class="brand">Jasmine Gilbert</div>
@@ -23,11 +62,10 @@
           <a class="dropbtn" href="index.html#apropos">A propos &#9662;</a>
           <ul class="dropdown-menu">
             <li><a href="mon-cv.html">Mon CV</a></li>
-            <li><a href="mon-entreprise.html">Mon entreprise</a></li>
             <li><a href="mon-stage.html">Mon stage</a></li>
+            <li><a href="mon-entreprise.html">Mon entreprise</a></li>
           </ul>
         </li>
-        <li><a href="tcs.html">TCS</a></li>
         <li class="dropdown">
           <a class="dropbtn" href="#">Projets &#9662;</a>
           <ul class="dropdown-menu">
@@ -43,6 +81,7 @@
             <li><a href="veille-jur.html">Veilles juridiques</a></li>
           </ul>
         </li>
+        <li><a href="tcs.html">TCS</a></li>
       </ul>
     </nav>
   </header>
@@ -73,7 +112,7 @@
       <div class="bts-grid">
 
         <!-- École -->
-        <div class="bts-card bts-card--school">
+        <div class="bento-tile" style="background: linear-gradient(135deg, #f6f7fa 0%, #e3e6eb 100%) !important; border-radius: 18px !important; box-shadow: 0 2px 16px rgba(30,41,59,0.07) !important; border: 1.5px solid #e0e7ef !important;">
           <div class="bts-card__header">
             <span class="bts-card__label">École</span>
           </div>
@@ -87,19 +126,18 @@
           <div class="bts-skills-list" style="margin-top:0.6rem;">
             <div class="bts-skill-row"><span class="bts-skill-dot"></span>518 Avenue du Prado, Marseille</div>
             <div class="bts-skill-row"><span class="bts-skill-dot"></span>2024 &ndash; 2026</div>
-            <div class="bts-skill-row"><span class="bts-skill-dot"></span>Alternance chez Sauvegarde13</div>
           </div>
         </div>
 
         <!-- Compétences clés -->
-        <div class="bts-card">
+        <div class="bento-tile" style="background: linear-gradient(135deg, #f6f7fa 0%, #e3e6eb 100%) !important; border-radius: 18px !important; box-shadow: 0 2px 16px rgba(30,41,59,0.07) !important; border: 1.5px solid #e0e7ef !important;">
           <div class="bts-card__header">
             <span class="bts-card__label">Compétences clés</span>
           </div>
           <div class="bts-skills-list">
             <div class="bts-skill-row"><span class="bts-skill-dot"></span>Installer et configurer des équipements réseau</div>
             <div class="bts-skill-row"><span class="bts-skill-dot"></span>Sécuriser les infrastructures</div>
-            <div class="bts-skill-row"><span class="bts-skill-dot"></span>Administrer des systèmes Windows &amp; Linux</div>
+            <div class="bts-skill-row"><span class="bts-skill-dot"></span>Administrer des systèmes Windows (Server : AD, DNS, DHCP, GPO)</div>
             <div class="bts-skill-row"><span class="bts-skill-dot"></span>Gérer la virtualisation</div>
             <div class="bts-skill-row"><span class="bts-skill-dot"></span>Maintenir et dépanner les réseaux</div>
           </div>
@@ -112,7 +150,7 @@
         </div>
 
         <!-- Graphique compétences -->
-        <div class="bts-card bts-card--chart">
+        <div class="bento-tile bento-tile--span2" style="background: linear-gradient(135deg, #f6f7fa 0%, #e3e6eb 100%) !important; border-radius: 18px !important; box-shadow: 0 2px 16px rgba(30,41,59,0.07) !important; border: 1.5px solid #e0e7ef !important;">
           <div class="bts-card__header">
             <span class="bts-card__label">Répartition des compétences</span>
             <span class="bts-card__mono">skills.chart</span>
@@ -129,6 +167,7 @@
             <div id="skillsLegendRight" class="bts-legend"></div>
           </div>
         </div>
+
 
       </div>
     </section>
